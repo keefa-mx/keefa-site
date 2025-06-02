@@ -1,6 +1,5 @@
 const translations = {
   en: {
-    tagline: img: "tagline-en.svg",
     aboutUs: {
       title: "About Us",
       paragraphs: [
@@ -19,7 +18,6 @@ const translations = {
     }
   },
   es: {
-    tagline: img: "tagline-es.svg",
     aboutUs: {
       title: "Acerca de Nosotros",
       paragraphs: [
@@ -45,7 +43,7 @@ function renderContent(lang) {
   // Tagline image
   const taglineImg = document.getElementById('tagline');
   if (taglineImg) {
-    taglineImg.src = lang === 'en' ? 'images/tagline-en.svg' : 'images/tagline-es.svg';
+    taglineImg.src = lang === 'en' ? 'tagline-en.svg' : 'tagline-es.svg';
   }
 
   // About Us
