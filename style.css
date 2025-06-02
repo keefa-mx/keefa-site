@@ -20,7 +20,7 @@
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  height: 50%;
+  height: 100%;
   width: auto;
 }
 
