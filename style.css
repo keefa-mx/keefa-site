@@ -1,0 +1,128 @@
+.header {
+  height: 15vh;
+  background-color: #CCCCCC;
+  color: FFFFFF;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0 5vw;
+}
+
+.logo {
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  margin-right: auto; /* Логотип слева */
+}
+
+.tagline {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4rem; /* Подстрой под нужную высоту */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 1.6;
+}
+
+section {
+  width: 70vw;
+  pagging-right: 15vw;
+  padding-left: 15vw;
+}
+
+.lang-switch {
+  text-align: center;
+  margin: 5vh;
+}
+
+.lang-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.lang-btn:hover,
+.lang-btn:focus {
+  transform: scale(1.2);
+  outline: none;
+}
+
+.products-container {
+  display: block;
+}
+
+.product-card {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #ABFF33, #CCCCCC, #FFFFFF);
+  color: black;
+  border-radius: 12px;
+  width: 70vw;
+  height: 25vh;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-bottom: 5vh;
+}
+
+.product-text {
+  font-size: 15px;
+  font-family: 'Righteous', sans-serif;
+  display: flex;
+  margin-left: 5vw;
+  flex: 1;
+}
+
+.product-image {
+  height: 100%;
+  width: 25%;
+  object-fit: contain;
+  box-sizing: border-box;
+  margin-left: 20vw;
+}
+
+
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  margin-top: 2vh;
+  flex-wrap: wrap; /* если экран узкий — перенос */
+}
+
+.feature-item {
+  flex: 1 1 30%;
+  background-color: #F0F0F0;
+  padding: 2vh 2vw;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+  background-color: #EAEAEA;
+}
+
+footer {
+  height: 15vh;
+  background-color: #CCCCCC;
+}
