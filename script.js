@@ -11,7 +11,7 @@ const translations = {
     products: {
       title: "Our Products",
       items: [
-        { name: "Keefa Guard", link: "lighting.html", img: "images/router.png" }
+        { name: "Keefa Guard", link: "lighting.html", img: "router.png" }
       ]
     },
     features: {
@@ -30,7 +30,7 @@ const translations = {
     products: {
       title: "Nuestros Productos",
       items: [
-        { name: "Keefa Guard", link: "lighting.html", img: "images/router.png" }
+        { name: "Keefa Guard", link: "lighting.html", img: "router.png" }
       ]
     },
     features: {
