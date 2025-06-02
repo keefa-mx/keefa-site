@@ -1,6 +1,6 @@
 .header {
   height: 15vh;
-  background: linear-gradient(to left, #ABFF33, #CCCCCC);
+  background: linear-gradient(to left, #ABFF33 15%, #CCCCCC);
   color: FFFFFF;
   display: flex;
   align-items: flex-end;
@@ -13,7 +13,7 @@
   height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
-  margin-right: auto;
+  margin-left: auto;
 }
 
 .tagline {
