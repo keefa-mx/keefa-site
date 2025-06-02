@@ -22,8 +22,6 @@
   transform: translateX(-50%);
   height: 50%;
   width: auto;
-  display: block;
-  object-fit: contain;
 }
 
 body {
