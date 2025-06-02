@@ -43,7 +43,7 @@ function renderContent(lang) {
   // Tagline image
   const taglineImg = document.getElementById('tagline');
   if (taglineImg) {
-    taglineImg.src = lang === 'en' ? 'taglineblack-en.svg' : 'taglineblack-es.svg';
+    taglineImg.src = lang === 'en' ? 'tagline-en.svg' : 'tagline-es.svg';
   }
 
   // About Us
