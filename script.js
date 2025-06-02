@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    tagline: "CONNECT TO YOUR SPACE",
+    tagline: img: "tagline-en.svg",
     aboutUs: {
       title: "About Us",
       paragraphs: [
@@ -19,7 +19,7 @@ const translations = {
     }
   },
   es: {
-    tagline: "CONÉCTATE CON TU ENTORNO",
+    tagline: img: "tagline-es.svg",
     aboutUs: {
       title: "Acerca de Nosotros",
       paragraphs: [
