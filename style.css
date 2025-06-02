@@ -1,6 +1,6 @@
 .header {
   height: 15vh;
-  background-color: linear-gradient(to left, #ABFF33, #CCCCCC, #FFFFFF);
+  background: linear-gradient(to left, #ABFF33, #CCCCCC, #FFFFFF);
   color: FFFFFF;
   display: flex;
   align-items: flex-end;
