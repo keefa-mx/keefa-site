@@ -10,10 +10,10 @@
 }
 
 .logo {
-  height: 100px;
+  height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
-  margin-right: auto; /* Логотип слева */
+  margin-right: auto;
 }
 
 .tagline {
