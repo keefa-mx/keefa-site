@@ -3,9 +3,6 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 <svg viewBox="0 0 1536 396" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
 <defs/>
-<clipPath id="ArtboardFrame">
-<rect height="396" width="1536" x="0" y="0"/>
-</clipPath>
 <g clip-path="url(#ArtboardFrame)" id="Layer-1">
 <g fill="#ffffff" opacity="1" stroke="none">
 <path d="M170.823 397.8C190.923 397.8 201.823 384.9 203.723 370.1L187.323 370.1C186.523 378.1 181.423 385.7 170.823 385.7C159.923 385.7 152.523 377.4 152.523 360.9C152.523 344.4 159.423 336.3 170.823 336.3C181.623 336.3 186.623 343.7 187.323 352.4L203.723 352.4C202.323 336.9 191.223 324.2 170.823 324.2C148.923 324.2 135.823 338.4 135.823 360.9C135.823 383.4 149.923 397.8 170.823 397.8Z"/>
