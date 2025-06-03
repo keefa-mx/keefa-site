@@ -78,7 +78,7 @@ section {
 }
 
 .product-text {
-  font-size: 15px;
+  font-size: clamp(1rem, 2.5rem, 4rem);
   font-family: 'Righteous', sans-serif;
   display: flex;
   margin-left: 5vw;
@@ -93,14 +93,12 @@ section {
   margin-left: 20vw;
 }
 
-
-
 .feature-list {
   display: flex;
   justify-content: space-between;
   gap: 2vw;
   margin-top: 2vh;
-  flex-wrap: wrap; /* если экран узкий — перенос */
+  flex-wrap: wrap;
 }
 
 .feature-item {
