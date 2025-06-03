@@ -78,7 +78,7 @@ section {
 }
 
 .product-text {
-  font-size: clamp(1rem, 2.5rem, 4rem);
+  font-size: clamp(1.5rem, 12vw, 17.5vh);
   font-family: 'Righteous', sans-serif;
   display: flex;
   margin-left: 5vw;
