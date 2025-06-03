@@ -80,29 +80,20 @@ section {
 .product-text {
   display: flex;
   width: 75%;
+  font-size: clamp:(1rem, 5vh, 3rem);
+  font-family: 'Righteous', sans-serif;
   align-items: center;
   justify-content: flex-start;
   padding-left: 2%;
 }
 
-.product-text p {
-  width: 70%;
-  font-size: clamp:(1rem, 5vh, 3rem);
-  font-family: 'Righteous', sans-serif;
-  line-height: 1.2;
-}
-
 .product-image {
-  width: 25%;
+  max-width: 25%;
+  height: 100%;
+  ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-.product-image img {
-  max-width: 100%;
-  max-height: 100%;
   object-fit: contain;
 }
 
