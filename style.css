@@ -78,19 +78,32 @@ section {
 }
 
 .product-text {
-  font-size: clamp(1.5rem, min(12vw, 17.5vh), 17.5vh);
-  font-family: 'Righteous', sans-serif;
   display: flex;
-  margin-left: 5vw;
-  flex: 1;
+  width: 75%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2%;
+}
+
+.product-text p {
+  width: 70%;
+  font-size: clamp:(1rem, 5vh, 3rem);
+  font-family: 'Righteous', sans-serif;
+  line-height: 1.2;
 }
 
 .product-image {
-  height: 100%;
   width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  box-sizing: border-box;
-  margin-left: 20vw;
 }
 
 .feature-list {
