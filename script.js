@@ -54,7 +54,7 @@ function renderContent(lang) {
 }
   
   // Mobile menu
-  const menu = document.getElementById('mobileMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
   if (mobileMenu) {
     menu.innerHTML = `
       <a href="facturacion.html">${data.billing}</a>
@@ -121,7 +121,7 @@ function initHamburgerMenu() {
     hamburger.onclick = () => {
       mobileMenu.classList.toggle('open');
       hamburger.classList.toggle('open');
-      body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+      body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
     };
   }
 }
