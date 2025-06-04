@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: clamp(28px, 5vh, 36px);
-  aspect-ratio: 1 / 1.2;
+  aspect-ratio: 1 / 1.5;
   background: none;
   border: none;
   cursor: pointer;
