@@ -36,6 +36,15 @@
   color: #000;
 }
 
+.desktop-menu {
+  display: none;
+}
+
+.hamburger,
+#mobileMenu {
+  display: none;
+}
+
 @media (min-width: 431px) {
   .desktop-menu {
     display: block;
