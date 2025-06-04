@@ -13,16 +13,27 @@
 
 .desktop-menu ul {
   display: flex;
-  gap: 2rem;
+  gap: 16px;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .desktop-menu li a {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: white;
+  color: #333;
   text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: background 0.3s, color 0.3s;
+  font-weight: 500;
+}
+
+.desktop-menu li a:hover {
+  background-color: #f0f0f0;
   color: #000;
-  font-weight: bold;
 }
 
 @media (max-width: 768px) {
