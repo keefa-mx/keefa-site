@@ -51,13 +51,6 @@ function renderContent(lang) {
     nav.classList.toggle('active');
   });
 
-const hamburger = document.querySelector('.hamburger');
-const menu = document.getElementById('mobileMenu');
-
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('open');
-});
-
   // About Us
   const aboutEl = document.getElementById('about-us');
   if (aboutEl) {
