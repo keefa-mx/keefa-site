@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (hamburger && menu) {
     hamburger.addEventListener('click', () => {
       menu.classList.toggle('open');
+      hamburger.classList.toggle('open');
       body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
     });
   }
