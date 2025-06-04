@@ -146,8 +146,6 @@ svg {
 /* -------------------- Остальной контент -------------------- */
 section {
   width: 70vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
   margin: 0 auto;
   padding: 0;
 }
