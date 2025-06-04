@@ -46,9 +46,7 @@ function renderContent(lang) {
 
   const desktopMenu = document.getElementById('desktopMenu');
 desktopMenu.innerHTML = `
-  <li><a href="index.html">${translations[lang].home || "Home"}</a></li>
-  <li><a href="products.html">${translations[lang].products?.title || "Products"}</a></li>
-  <li><a href="contact.html">${translations[lang].contacts}</a></li>
+  <li><a href="contacts.html">${translations[lang].contacts}</a></li>
   <li><a href="facturacion.html">${translations[lang].billing}</a></li>
 `;
   
