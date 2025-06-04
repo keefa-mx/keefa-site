@@ -36,8 +36,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: clamp(28px, 5vh, 36px);
-  aspect-ratio: 2 / 1;
-  background: none;
+  aspect-ratio: 3 / 1;
+  background: #ABFF33;
   border: none;
   cursor: pointer;
   margin-left: auto;
