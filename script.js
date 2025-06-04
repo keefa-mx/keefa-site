@@ -44,27 +44,14 @@ const translations = {
 function renderContent(lang) {
   const data = translations[lang];
 
-    const menu = document.getElementById('mobileMenu');
+  // Обновляем меню
+  const menu = document.getElementById('mobileMenu');
   if (menu) {
     menu.innerHTML = `
       <a href="facturacion.html">${data.billing}</a>
       <a href="contactos.html">${data.contacts}</a>
     `;
   }
-
-document.addEventListener('DOMContentLoaded', () => {
-  const lang = localStorage.getItem('lang') || 'en';
-  setLang(lang);
-
-  const hamburger = document.querySelector('.hamburger');
-  const menu = document.getElementById('mobileMenu');
-
-  if (hamburger && menu) {
-    hamburger.addEventListener('click', () => {
-      menu.classList.toggle('open');
-    });
-  }
-});
 
   // About Us
   const aboutEl = document.getElementById('about-us');
@@ -102,7 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   }
 
-  // Save language
+  // Обновляем lang атрибут у <html>
+  document.documentElement.lang = lang;
+
+  // Сохраняем язык
   localStorage.setItem('lang', lang);
 }
 
@@ -110,7 +100,17 @@ function setLang(lang) {
   renderContent(lang);
 }
 
+// Глобальная инициализация после загрузки
 document.addEventListener('DOMContentLoaded', () => {
   const lang = localStorage.getItem('lang') || 'en';
   setLang(lang);
+
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.getElementById('mobileMenu');
+
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  }
 });
