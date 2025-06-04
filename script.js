@@ -40,12 +40,6 @@ const translations = {
 function renderContent(lang) {
   const data = translations[lang];
 
-  // Tagline image
-  const taglineImg = document.getElementById('tagline');
-  if (taglineImg) {
-    taglineImg.src = lang === 'en' ? 'tagline-en.svg' : 'tagline-es.svg';
-  }
-
   // About Us
   const aboutEl = document.getElementById('about-us');
   if (aboutEl) {
