@@ -1,7 +1,7 @@
 const translations = {
   en: {
     billing: "Billing",
-    contacts: "Contacts"
+    contacts: "Contacts",
     aboutUs: {
       title: "About Us",
       paragraphs: [
@@ -21,7 +21,7 @@ const translations = {
   },
   es: {
     billing: "Facturación",
-    contacts: "Contactos"
+    contacts: "Contactos",
     aboutUs: {
       title: "Acerca de Nosotros",
       paragraphs: [
