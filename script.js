@@ -44,12 +44,13 @@ const translations = {
 function renderContent(lang) {
   const data = translations[lang];
 
-  const hamburger = document.querySelector('.hamburger');
-  const nav = document.querySelector('.nav');
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
+    const menu = document.getElementById('mobileMenu');
+  if (menu) {
+    menu.innerHTML = `
+      <a href="facturacion.html">${data.billing}</a>
+      <a href="contactos.html">${data.contacts}</a>
+    `;
+  }
 
   // About Us
   const aboutEl = document.getElementById('about-us');
