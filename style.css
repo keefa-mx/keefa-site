@@ -116,7 +116,7 @@
 }
 
 .mobile-menu.open {
-  display: flex;
+  display: block;
 }
 
 body {
