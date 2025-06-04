@@ -34,12 +34,16 @@
 .mobile-menu {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 15vh;
   right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 16px;
   z-index: 1000;
 }
 
