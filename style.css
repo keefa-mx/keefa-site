@@ -52,10 +52,11 @@
   flex-direction: column;
   justify-content: space-between;
   height: clamp(28px, 5vh, 36px);
-  aspect-ratio: 3 / 1;
+  aspect-ratio: 1.5 / 1;
   background: #ABFF33;
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
   margin-left: auto;
   padding-right: 5%;
   z-index: 1001;
