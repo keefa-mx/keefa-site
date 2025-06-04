@@ -44,15 +44,15 @@ const translations = {
 function renderContent(lang) {
   const data = translations[lang];
 
+  //Desktop menu
   const desktopMenu = document.getElementById('desktopMenu');
 desktopMenu.innerHTML = `
   <li><a href="contacts.html">${translations[lang].contacts}</a></li>
   <li><a href="facturacion.html">${translations[lang].billing}</a></li>
 `;
   
-  // Обновляем меню
-  const menu = document.getElementById('mobileMenu');
-  if (menu) {
+  // Mobile menu
+  const menu = document.getElementById('mobileMenu');  
     menu.innerHTML = `
       <a href="facturacion.html">${data.billing}</a>
       <a href="contactos.html">${data.contacts}</a>
@@ -95,30 +95,35 @@ desktopMenu.innerHTML = `
     `;
   }
 
-  // Обновляем <html lang="">
+  // Set <html lang="">
   document.documentElement.lang = lang;
 
-  // Сохраняем язык
+  // Save selected language
   localStorage.setItem('lang', lang);
+
+  //Initialize hamburger behavior again
+  initHamburgerMenu();
 }
 
 function setLang(lang) {
   renderContent(lang);
 }
 
-// Обработчик после загрузки страницы
+function initHamburgerMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const body = document.body;
+
+  if (hamburger && mobileMenu) {
+    hamburger.onclick = () => {
+      mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    };
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const lang = localStorage.getItem('lang') || 'en';
   setLang(lang);
-
-  const hamburger = document.querySelector('.hamburger');
-  const menu = document.getElementById('mobileMenu');
-  const body = document.body;
-
-    hamburger.addEventListener('click', () => {
-      menu.classList.toggle('open');
-      hamburger.classList.toggle('open');
-      body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
-    });
 });
-  
