@@ -78,7 +78,7 @@ svg {
 .desktop-menu {
   display: none;                 /* скрываем по умолчанию */
   margin-left: auto;
-  padding-right: 5%;
+  padding-right: 3%;
 }
 
 .desktop-menu ul {
@@ -96,7 +96,6 @@ svg {
   color: #000;
   text-decoration: none;
   border-radius: 6px;
-  border: 1px solid #ABFF33;
   font-weight: 700;
   transition: background 0.3s, color 0.3s;
 }
