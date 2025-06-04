@@ -15,15 +15,13 @@
   display: flex;
   gap: 16px;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  margin-left: auto;
 }
 
 .desktop-menu li a {
   display: inline-block;
-  padding: 10px 16px;
   background-color: white;
-  color: #333;
+  color: #000;
   text-decoration: none;
   border-radius: 6px;
   border: 1px solid #ddd;
