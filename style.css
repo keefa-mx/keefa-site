@@ -1,18 +1,30 @@
-/* Основные стили */
+/* -------------------- Базовые настройки -------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
-  background-color: #FFFFFF;
-  color: #000000;
   line-height: 1.6;
+  background: #fff;
+  color: #000;
   overflow-x: hidden;
 }
 
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -------------------- Header -------------------- */
 .header {
   height: 15vh;
-  background-color: #CCCCCC;
+  background: #CCCCCC;
   display: flex;
   align-items: center;
   padding: 0 5%;
@@ -26,9 +38,9 @@ body {
   object-fit: contain;
 }
 
-/* Гамбургер — по умолчанию скрыт, виден на мобильных */
+/* ---------- Гамбургер: по умолчанию показываем ---------- */
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: clamp(28px, 5vh, 36px);
@@ -36,17 +48,15 @@ body {
   background: #ABFF33;
   border: none;
   cursor: pointer;
-  box-sizing: border-box;
   margin-left: auto;
   padding: 0 5%;
   z-index: 1001;
 }
 
 .hamburger span {
-  display: block;
   width: 100%;
   height: 16%;
-  background-color: #000000;
+  background: #000;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -61,77 +71,79 @@ body {
   transform: translate(5px, -5px) rotate(-45deg);
 }
 
-/* Десктоп-меню */
+/* ---------- Горизонтальное меню (desktop) ---------- */
 .desktop-menu {
-  display: none;
+  display: none;                 /* скрываем по умолчанию */
+  margin-left: auto;
 }
+
 .desktop-menu ul {
   display: flex;
   gap: 16px;
   list-style: none;
-  margin-left: auto;
   padding: 0;
+  margin: 0;
 }
+
 .desktop-menu li a {
   display: inline-block;
-  background-color: white;
+  padding: 8px 16px;
+  background: #fff;
   color: #000;
   text-decoration: none;
   border-radius: 6px;
   border: 1px solid #ddd;
-  transition: background 0.3s, color 0.3s;
   font-weight: 500;
-  padding: 8px 16px;
-}
-.desktop-menu li a:hover {
-  background-color: #f0f0f0;
-  color: #000;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Мобильное меню */
+.desktop-menu li a:hover {
+  background: #f0f0f0;
+}
+
+/* ---------- Мобильное меню (выезжает поверх) ---------- */
 .mobile-menu {
-  display: none;
+  display: none;                 /* по умолчанию скрыто */
   flex-direction: column;
   position: fixed;
-  top: 15vh;
+  top: 15vh;                     /* начинается сразу под хедером */
   left: 0;
   right: 0;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 15vh);
+  background: #fff;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  gap: 24px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 999;
 }
+
 .mobile-menu a {
-  text-decoration: none;
-  color: #000;
-  padding: 10px 0;
   font-family: 'Righteous', sans-serif;
   font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
 }
+
+/* класс, который добавляет JS при открытии */
 .mobile-menu.open {
   display: flex;
 }
 
-/* Медиа-запросы */
+/* -------------------- Медиа‑запрос: десктоп ≥ 431 px -------------------- */
 @media (min-width: 431px) {
-  .desktop-menu {
-    display: block;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
+  .hamburger,
   .mobile-menu {
-    display: none !important;
+    display: none !important;    /* скрываем бургер и мобильное меню */
+  }
+
+  .desktop-menu {
+    display: block;              /* показываем горизонтальное меню */
   }
 }
 
-/* Секции */
-
+/* -------------------- Остальной контент -------------------- */
 section {
   width: 70vw;
   padding-left: 15vw;
@@ -145,11 +157,10 @@ section {
 
 .lang-btn {
   font-size: 2rem;
-  cursor: pointer;
-  background: transparent;
+  background: none;
   border: none;
-  user-select: none;
-  transition: transform 0.2s ease;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 .lang-btn:hover,
 .lang-btn:focus {
@@ -157,70 +168,65 @@ section {
   outline: none;
 }
 
-/* Продукты */
+/* --- Cards, products, features --- */
 
 .products-container {
   display: block;
 }
+
 .product-card {
-  overflow: hidden;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #ABFF33, #CCCCCC, #FFFFFF);
-  color: black;
-  border-radius: clamp(8px, 1.2vw, 16px);
   width: 70vw;
   height: 25vh;
-  box-sizing: border-box;
-  text-decoration: none;
   margin-bottom: 5vh;
+  text-decoration: none;
+  background: linear-gradient(to right, #ABFF33, #CCCCCC, #FFFFFF);
+  border-radius: clamp(8px, 1.2vw, 16px);
+  color: #000;
 }
+
 .product-text {
-  display: flex;
   width: 75%;
+  padding-left: 5%;
   font-size: clamp(1rem, 2.5vh, 3rem);
   font-family: 'Righteous', sans-serif;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 5%;
 }
+
 .product-image {
-  max-width: 25%;
+  width: 25%;
   height: 100%;
   object-fit: contain;
 }
 
-/* Особенности / Features */
-
 .feature-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 2vw;
   margin-top: 2vh;
-  flex-wrap: wrap;
 }
+
 .feature-item {
   flex: 1 1 30%;
-  background-color: #F0F0F0;
+  background: #F0F0F0;
   padding: 2vh 2vw;
   border-radius: clamp(8px, 1.2vw, 16px);
-  font-family: 'Inter', sans-serif;
   font-size: clamp(1rem, 1.2vw, 1.5rem);
   font-weight: 600;
   color: #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   text-align: center;
-  transition: transform 0.2s ease;
-}
-.feature-item:hover {
-  transform: scale(1.05);
-  background-color: #EAEAEA;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
 }
 
-/* Футер */
+.feature-item:hover {
+  transform: scale(1.05);
+  background: #EAEAEA;
+}
+
+/* -------------------- Footer -------------------- */
 
 footer {
   height: 15vh;
-  background-color: #CCCCCC;
+  background: #CCCCCC;
 }
-
