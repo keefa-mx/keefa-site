@@ -118,12 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.getElementById('mobileMenu');
   const body = document.body;
 
-  if (hamburger && menu) {
     hamburger.addEventListener('click', () => {
       menu.classList.toggle('open');
       hamburger.classList.toggle('open');
       body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
     });
-  }
 });
   
