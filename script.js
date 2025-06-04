@@ -43,22 +43,24 @@ const translations = {
 
 function renderContent(lang) {
   const data = translations[lang];
+  const contactsPage = lang === 'es' ? 'contactos.html' : 'contacts.html';
+  const billingPage = lang === 'es' ? 'facturacion.html' : 'billing.html';
 
-  //Desktop menu
+  // Desktop menu
   const desktopMenu = document.getElementById('desktopMenu');
   if (desktopMenu) {
     desktopMenu.innerHTML = `
-      <li><a href="contacts.html">${translations[lang].contacts}</a></li>
-      <li><a href="facturacion.html">${translations[lang].billing}</a></li>
+      <li><a href="${contactsPage}">${data.contacts}</a></li>
+      <li><a href="${billingPage}">${data.billing}</a></li>
     `;
-}
-  
+  }
+
   // Mobile menu
   const mobileMenu = document.getElementById('mobileMenu');
   if (mobileMenu) {
-    menu.innerHTML = `
-      <a href="facturacion.html">${data.billing}</a>
-      <a href="contactos.html">${data.contacts}</a>
+    mobileMenu.innerHTML = `
+      <a href="${billingPage}">${data.billing}</a>
+      <a href="${contactsPage}">${data.contacts}</a>
     `;
   }
 
@@ -104,7 +106,7 @@ function renderContent(lang) {
   // Save selected language
   localStorage.setItem('lang', lang);
 
-  //Initialize hamburger behavior again
+  // Reinitialize hamburger menu
   initHamburgerMenu();
 }
 
