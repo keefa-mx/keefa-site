@@ -20,8 +20,8 @@ const translations = {
     }
   },
   es: {
-    billing: 
-    contacts: 
+    billing: "Facturación",
+    contacts: "Contactos"
     aboutUs: {
       title: "Acerca de Nosotros",
       paragraphs: [
