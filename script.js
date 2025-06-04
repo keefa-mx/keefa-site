@@ -52,6 +52,20 @@ function renderContent(lang) {
     `;
   }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const lang = localStorage.getItem('lang') || 'en';
+  setLang(lang);
+
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.getElementById('mobileMenu');
+
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  }
+});
+
   // About Us
   const aboutEl = document.getElementById('about-us');
   if (aboutEl) {
