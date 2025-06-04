@@ -44,14 +44,13 @@ const translations = {
 function renderContent(lang) {
   const data = translations[lang];
 
-  // Обновляем десктопное меню
   const desktopMenu = document.getElementById('desktopMenu');
-  if (desktopMenu) {
-    desktopMenu.innerHTML = `
-      <li><a href="facturacion.html">${data.billing}</a></li>
-      <li><a href="contactos.html">${data.contacts}</a></li>
-    `;
-  }
+desktopMenu.innerHTML = `
+  <li><a href="index.html">${translations[lang].home || "Home"}</a></li>
+  <li><a href="products.html">${translations[lang].products?.title || "Products"}</a></li>
+  <li><a href="contact.html">${translations[lang].contacts}</a></li>
+  <li><a href="facturacion.html">${translations[lang].billing}</a></li>
+`;
   
   // Обновляем меню
   const menu = document.getElementById('mobileMenu');
