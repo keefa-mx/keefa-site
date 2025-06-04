@@ -1,5 +1,7 @@
 const translations = {
   en: {
+    billing: "Billing",
+    contacts: "Contacts"
     aboutUs: {
       title: "About Us",
       paragraphs: [
@@ -18,6 +20,8 @@ const translations = {
     }
   },
   es: {
+    billing: 
+    contacts: 
     aboutUs: {
       title: "Acerca de Nosotros",
       paragraphs: [
@@ -46,6 +50,13 @@ function renderContent(lang) {
   hamburger.addEventListener('click', () => {
     nav.classList.toggle('active');
   });
+
+const hamburger = document.querySelector('.hamburger');
+const menu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
 
   // About Us
   const aboutEl = document.getElementById('about-us');
