@@ -2,6 +2,7 @@
   height: 15vh;
   background-color: #CCCCCC;
   display: flex;
+  align-items: center;
 }
 
 .logo {
