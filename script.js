@@ -89,7 +89,7 @@ function renderContent(lang) {
     `;
   }
 
-  // Обновляем lang атрибут у <html>
+  // Обновляем <html lang="">
   document.documentElement.lang = lang;
 
   // Сохраняем язык
@@ -100,7 +100,7 @@ function setLang(lang) {
   renderContent(lang);
 }
 
-// Глобальная инициализация после загрузки
+// Обработчик после загрузки страницы
 document.addEventListener('DOMContentLoaded', () => {
   const lang = localStorage.getItem('lang') || 'en';
   setLang(lang);
