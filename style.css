@@ -96,7 +96,7 @@ svg {
   color: #000;
   text-decoration: none;
   border-radius: 6px;
-  border: 1px solid #ddd;
+  border: 1px solid #ABFF33;
   font-weight: 700;
   transition: background 0.3s, color 0.3s;
 }
