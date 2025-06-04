@@ -36,8 +36,13 @@
   color: #000;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   .desktop-menu {
+    display: block;
+  }
+
+  .hamburger,
+  #mobileMenu {
     display: none;
   }
 }
