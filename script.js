@@ -46,13 +46,16 @@ function renderContent(lang) {
 
   //Desktop menu
   const desktopMenu = document.getElementById('desktopMenu');
-desktopMenu.innerHTML = `
-  <li><a href="contacts.html">${translations[lang].contacts}</a></li>
-  <li><a href="facturacion.html">${translations[lang].billing}</a></li>
-`;
+  if (desktopMenu) {
+    desktopMenu.innerHTML = `
+      <li><a href="contacts.html">${translations[lang].contacts}</a></li>
+      <li><a href="facturacion.html">${translations[lang].billing}</a></li>
+    `;
+}
   
   // Mobile menu
-  const menu = document.getElementById('mobileMenu');  
+  const menu = document.getElementById('mobileMenu');
+  if (mobileMenu) {
     menu.innerHTML = `
       <a href="facturacion.html">${data.billing}</a>
       <a href="contactos.html">${data.contacts}</a>
