@@ -57,7 +57,7 @@ svg {
 .hamburger span {
   display: block;
   width: 75%;
-  height: 10%;
+  height: 25%;
   background: #000;
   border-radius: 2px;
   transition: all 0.3s ease;
