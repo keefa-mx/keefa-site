@@ -59,12 +59,12 @@ function renderContent(lang) {
   const mobileMenu = document.getElementById('mobileMenu');
   if (mobileMenu) {
     mobileMenu.innerHTML = `
+      <div class="mobile-lang-switch">
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('es')">ES</button>
+      </div>
       <a href="${billingPage}">${data.billing}</a>
       <a href="${contactsPage}">${data.contacts}</a>
-      <div class="mobile-lang-switch">
-        <button class="lang-btn" onclick="setLang('es')">ES</button>
-        <button class="lang-btn" onclick="setLang('en')">EN</button>
-      </div>
     `;
   }
 
