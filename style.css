@@ -152,7 +152,7 @@ svg {
 }
 
 .mobile-lang-switch .lang-btn {
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   background: transparent;
   border-width: clamp(0.5px, 0.2vw, 1.5px) solid #000;
   border-radius: clamp(4px, 1vw, 12px);
