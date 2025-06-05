@@ -146,6 +146,27 @@ svg {
   }
 }
 
+.mobile-lang-switch {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.mobile-lang-switch .lang-btn {
+  font-size: 1.2rem;
+  background: transparent;
+  border: 1px solid #000;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.mobile-lang-switch .lang-btn:hover {
+  background-color: #eee;
+}
+
 /* -------------------- Остальной контент -------------------- */
 section {
   width: 70vw;
