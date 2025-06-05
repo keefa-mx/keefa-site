@@ -61,6 +61,10 @@ function renderContent(lang) {
     mobileMenu.innerHTML = `
       <a href="${billingPage}">${data.billing}</a>
       <a href="${contactsPage}">${data.contacts}</a>
+      <div class="mobile-lang-switch">
+        <button class="lang-btn" onclick="setLang('es')">ES</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
     `;
   }
 
