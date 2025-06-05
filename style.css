@@ -48,14 +48,15 @@ svg {
   cursor: pointer;
   border-radius: clamp(4px, 1vw, 8px); /* Скругление углов */
   padding: clamp(4px, 1vh, 8px);       /* Адаптивный отступ внутри */
-  margin-right: 5%;                    /* Отступ справа от края экрана */
+  margin-right: 5%;
+  margin-left: auto;
   z-index: 1001;
 }
 
 .hamburger span {
   display: block;
   width: 100%;
-  height: clamp(1px, 0.3vh, 2px);        /* Тонкая полоска */
+  height: clamp(2px, 0.5vh, 5px);
   background-color: #000;
   border-radius: 2px;
   transition: all 0.3s ease;
