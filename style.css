@@ -188,7 +188,7 @@ section {
 .lang-switch {
   display: flex;
   flex-direction: column;
-  gap: clamp(4px, 1vh, 12px);
+  gap: clamp(2px, 0.5vh, 6px);
 }
 
 .lang-btn {
