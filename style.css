@@ -78,23 +78,33 @@ svg {
 /* ---------- Горизонтальное меню (desktop) ---------- */
 .desktop-menu {
   display: none;
+  margin-left: clamp(16px, 3vw, 32px);
 }
 
 .desktop-menu ul {
   display: flex;
-  gap: clamp(0.5rem, 1vw, 1.2rem);
+  gap: clamp(16px, 2vw, 32px); /* одинаковые отступы между пунктами */
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .desktop-menu li a {
   display: inline-block;
+  background: none;
   color: #000;
   text-decoration: none;
   font-family: "Righteous", sans-serif;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   white-space: nowrap;
+  transition: color 0.3s ease;
+  padding: 0; /* убираем внутренние отступы */
+  border-radius: 0; /* убираем скругления */
+}
+
+.desktop-menu li a:hover {
+  color: #ABFF33; /* просто меняем цвет текста при наведении */
 }
 
 /* ---------- Мобильное меню (выезжает поверх) ---------- */
