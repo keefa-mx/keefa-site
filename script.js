@@ -1,9 +1,9 @@
 const translations = {
   en: {
     products: "Products ⌄",
+    app: "Keefa App",
     contact: "Contact",
     billing: "Billing",
-    app: "Keefa App",
     aboutUs: {
       title: "About Us",
       paragraphs: [
@@ -17,9 +17,9 @@ const translations = {
   },
   es: {
     products: "Productos ⌄",
+    app: "Keefa App",
     contact: "Contacto",
     billing: "Facturación",
-    app: "Keefa App",
     aboutUs: {
       title: "Acerca de Nosotros",
       paragraphs: [
@@ -36,18 +36,18 @@ const translations = {
 function renderContent(lang) {
   const data = translations[lang];
   const productsPage = '/products';
+  const appPage = '/app';
   const contactPage = '/contact';
   const billingPage = '/billing';
-  const appPage = '/app';
 
   // Desktop menu
   const desktopMenu = document.getElementById('desktopMenu');
   if (desktopMenu) {
     desktopMenu.innerHTML = `
   <li><a href="${productsPage}">${data.products}</a></li>
+  <li><a href="${appPage}">${data.app}</a></li>
   <li><a href="${contactPage}">${data.contact}</a></li>
   <li><a href="${billingPage}">${data.billing}</a></li>
-  <li><a href="${appPage}">${data.app}</a></li>
 `;
   }
 
@@ -60,9 +60,9 @@ function renderContent(lang) {
         <button class="lang-btn" onclick="setLang('es')">ES</button>
       </div>
       <a href="${productsPage}">${data.products}</a>
+      <a href="${appPage}">${data.app}</a>
       <a href="${contactPage}">${data.contact}</a>
       <a href="${billingPage}">${data.billing}</a>
-      <a href="${appPage}">${data.app}</a>
     `;
   }
 
