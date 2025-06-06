@@ -174,11 +174,16 @@ section {
   padding: 0;
 }
 
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 2vw, 24px);
+}
+
 .lang-switch {
   display: flex;
   flex-direction: column;
   gap: clamp(4px, 1vh, 12px);
-  margin-left: clamp(8px, 2vw, 24px);
 }
 
 .lang-btn {
