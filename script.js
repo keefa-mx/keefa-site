@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    products: "Products",
+    products: "Products ▼",
     contact: "Contact",
     billing: "Billing",
     aboutUs: {
@@ -15,7 +15,7 @@ const translations = {
     }
   },
   es: {
-    products: "Productos",
+    products: "Productos ▼",
     contact: "Contacto",
     billing: "Facturación",
     aboutUs: {
