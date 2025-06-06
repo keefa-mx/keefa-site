@@ -173,12 +173,13 @@ section {
 }
 
 .lang-switch {
-  text-align: center;
-  margin: 5vh;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 3%;
 }
 
 .lang-btn {
-  font-size: 2rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   background: none;
   border: none;
   cursor: pointer;
