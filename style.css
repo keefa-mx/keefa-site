@@ -36,6 +36,7 @@ svg {
 .logo-block {
   display: flex;
   align-items: center;
+  height: 100%;
   gap: clamp(8px, 2vw, 24px);
   margin-left: clamp(12px, 2vw, 32px);
   flex-shrink: 0;
