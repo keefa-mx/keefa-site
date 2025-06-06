@@ -28,7 +28,7 @@ svg {
   align-items: center;
   position: relative;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -78,13 +78,12 @@ svg {
 /* ---------- Горизонтальное меню (desktop) ---------- */
 .desktop-menu {
   display: none;
-  margin-left: auto;
-  margin-right: 2%;
+  margin-left: 5%;
 }
 
 .desktop-menu ul {
   display: flex;
-  gap: 4%;
+  gap: 5%;
   list-style: none;
   padding: 0;
   margin: 0;
