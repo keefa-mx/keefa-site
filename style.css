@@ -251,6 +251,21 @@ section {
   background: #EAEAEA;
 }
 
+.back-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #ABFF33;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #88cc00;
+}
+
 /* -------------------- Footer -------------------- */
 
 footer {
