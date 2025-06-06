@@ -112,7 +112,7 @@ svg {
   top: 15vh;                     /* начинается сразу под хедером */
   left: 0;
   right: 0;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 15vh);
   background: #fff;
   align-items: center;
