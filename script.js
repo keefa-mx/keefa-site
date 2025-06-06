@@ -1,7 +1,8 @@
 const translations = {
   en: {
-    billing: "BILLING",
-    contacts: "CONTACTS",
+    products: "Products",
+    contact: "Contact",
+    billing: "Billing",
     aboutUs: {
       title: "About Us",
       paragraphs: [
@@ -9,30 +10,19 @@ const translations = {
         "Our mission is to reshape everyday environments through innovation..."
       ]
     },
-    products: {
-      title: "Our Products",
-      items: [
-        { name: "Keefa Guard", link: "lighting.html", img: "router.png" }
-      ]
-    },
     features: {
       items: ["REGISTERED BRAND", "SOFTWARE ELABORATED IN MEXICO", "INTELLIGENT SYSTEMS"]
     }
   },
   es: {
-    billing: "FACTURACIÓN",
-    contacts: "CONTACTOS",
+    products: "Productos",
+    contact: "Contacto",
+    billing: "Facturación",
     aboutUs: {
       title: "Acerca de Nosotros",
       paragraphs: [
         "Keefa es una marca tecnológica de nueva generación...",
         "Nuestra misión es rediseñar los entornos cotidianos mediante la innovación..."
-      ]
-    },
-    products: {
-      title: "Nuestros Productos",
-      items: [
-        { name: "Keefa Guard", link: "lighting.html", img: "router.png" }
       ]
     },
     features: {
@@ -50,9 +40,10 @@ function renderContent(lang) {
   const desktopMenu = document.getElementById('desktopMenu');
   if (desktopMenu) {
     desktopMenu.innerHTML = `
-      <li><a href="${contactsPage}">${data.contacts}</a></li>
-      <li><a href="${billingPage}">${data.billing}</a></li>
-    `;
+  <li><a href="products.html">${data.products}</a></li>
+  <li><a href="contact.html">${data.contact}</a></li>
+  <li><a href="billing.html">${data.billing}</a></li>
+`;
   }
 
   // Mobile menu
