@@ -26,9 +26,19 @@ svg {
   background: #CCCCCC;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* чтобы меню и бургер ушли вправо */
   position: relative;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding-right: clamp(12px, 3vw, 40px);
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 2vw, 24px);
+  margin-left: clamp(12px, 2vw, 32px);
+  flex-shrink: 0;
 }
 
 .logo {
@@ -49,8 +59,7 @@ svg {
   cursor: pointer;
   border-radius: clamp(4px, 1vw, 8px); /* Скругление углов */
   padding: clamp(4px, 1vh, 8px);       /* Адаптивный отступ внутри */
-  margin-right: 5%;
-  margin-left: auto;
+  margin-left: clamp(8px, 2vw, 16px);
   z-index: 1001;
 }
 
@@ -173,12 +182,6 @@ section {
   width: 70vw;
   margin: 0 auto;
   padding: 0;
-}
-
-.logo-block {
-  display: flex;
-  align-items: center;
-  gap: clamp(8px, 2vw, 24px);
 }
 
 .lang-switch {
