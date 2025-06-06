@@ -173,12 +173,14 @@ section {
 }
 
 .lang-switch {
+  display: flex;
   align-items: center;
   margin-left: auto;
   padding-right: 3%;
 }
 
 .lang-btn {
+  display: flex;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   background: none;
   border: none;
