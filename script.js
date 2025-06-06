@@ -3,6 +3,7 @@ const translations = {
     products: "Products ⌄",
     contact: "Contact",
     billing: "Billing",
+    app: "Keefa App",
     aboutUs: {
       title: "About Us",
       paragraphs: [
@@ -18,6 +19,7 @@ const translations = {
     products: "Productos ⌄",
     contact: "Contacto",
     billing: "Facturación",
+    app: "Keefa App",
     aboutUs: {
       title: "Acerca de Nosotros",
       paragraphs: [
