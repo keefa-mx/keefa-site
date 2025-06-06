@@ -90,19 +90,11 @@ svg {
 
 .desktop-menu li a {
   display: inline-block;
-  padding: 2% 5%;
-  background: #fff;
   color: #000;
   text-decoration: none;
-  border-radius: clamp(4px, 1vw, 8px);
   font-family: "Righteous", sans-serif;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   white-space: nowrap;
-  transition: background 0.3s, color 0.3s;
-}
-
-.desktop-menu li a:hover {
-  background: #ABFF33;
 }
 
 /* ---------- Мобильное меню (выезжает поверх) ---------- */
@@ -110,7 +102,7 @@ svg {
   display: none;                 /* по умолчанию скрыто */
   flex-direction: column;
   position: fixed;
-  top: 15vh;                     /* начинается сразу под хедером */
+  top: 10vh;
   left: 0;
   right: 0;
   width: 100%;
