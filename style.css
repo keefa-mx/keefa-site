@@ -97,6 +97,7 @@ svg {
   text-decoration: none;
   border-radius: 6px;
   font-family: "Righteous", sans-serif;
+  white-space: nowrap;
   transition: background 0.3s, color 0.3s;
 }
 
