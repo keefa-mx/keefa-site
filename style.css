@@ -78,7 +78,6 @@ svg {
 /* ---------- Горизонтальное меню (desktop) ---------- */
 .desktop-menu {
   display: none;
-  margin-left: 5%;
 }
 
 .desktop-menu ul {
