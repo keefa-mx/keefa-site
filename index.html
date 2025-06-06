@@ -10,19 +10,23 @@
 <body>
 
   <header class="header">
-    <div class="logo-block">
-      <img src="logo.svg" class="logo" alt="Keefa logo" />
+   <div class="left-block">
+     <div class="logo-block">
+       <img src="logo.svg" class="logo" />
+       <div class="lang-switch">
+         <button class="lang-btn">EN</button>
+         <button class="lang-btn">ES</button>
+       </div>
+     </div>
+     <nav class="desktop-menu">
+       <ul></ul>
+     </nav>
+   </div>
 
-      <div class="lang-switch">
-        <button onclick="setLang('en')" class="lang-btn">🇺🇸</button>
-        <button onclick="setLang('es')" class="lang-btn">🇲🇽</button>
-      </div>
-    </div>
-    
-    <nav class="desktop-menu">
-      <ul id="desktopMenu">
-      </ul>
-    </nav>
+  <button class="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</header>
     
     <button class="hamburger" aria-label="Toggle menu">
       <span></span>
