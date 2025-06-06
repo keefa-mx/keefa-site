@@ -97,6 +97,7 @@ svg {
   text-decoration: none;
   border-radius: 6px;
   font-family: "Righteous", sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   white-space: nowrap;
   transition: background 0.3s, color 0.3s;
 }
