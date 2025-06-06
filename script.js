@@ -36,6 +36,7 @@ function renderContent(lang) {
   const productsPage = '/products';
   const contactPage = '/contact';
   const billingPage = '/billing';
+  const appPage = '/app';
 
   // Desktop menu
   const desktopMenu = document.getElementById('desktopMenu');
@@ -44,6 +45,7 @@ function renderContent(lang) {
   <li><a href="${productsPage}">${data.products}</a></li>
   <li><a href="${contactPage}">${data.contact}</a></li>
   <li><a href="${billingPage}">${data.billing}</a></li>
+  <li><a href="${appPage}">${data.app}</a></li>
 `;
   }
 
@@ -58,6 +60,7 @@ function renderContent(lang) {
       <a href="${productsPage}">${data.products}</a>
       <a href="${contactPage}">${data.contact}</a>
       <a href="${billingPage}">${data.billing}</a>
+      <a href="${appPage}">${data.app}</a>
     `;
   }
 
@@ -68,21 +71,6 @@ function renderContent(lang) {
       <h2>${data.aboutUs.title}</h2>
       <p>${data.aboutUs.paragraphs[0]}</p>
       <p>${data.aboutUs.paragraphs[1]}</p>
-    `;
-  }
-
-  // Products
-  const productsEl = document.getElementById('our-products');
-  if (productsEl) {
-    const productCards = data.products.items.map(item => `
-      <a href="${item.link}" class="product-card">
-        <span class="product-text">${item.name}</span>
-        <img src="${item.img}" alt="${item.name}" class="product-image" />
-      </a>
-    `).join('');
-    productsEl.innerHTML = `
-      <h2>${data.products.title}</h2>
-      <div class="products-container">${productCards}</div>
     `;
   }
 
