@@ -33,16 +33,17 @@ const translations = {
 
 function renderContent(lang) {
   const data = translations[lang];
-  const contactsPage = lang === 'es' ? 'contactos.html' : 'contacts.html';
-  const billingPage = lang === 'es' ? 'facturacion.html' : 'billing.html';
+  const productsPage = '/products';
+  const contactPage = '/contact';
+  const billingPage = '/billing';
 
   // Desktop menu
   const desktopMenu = document.getElementById('desktopMenu');
   if (desktopMenu) {
     desktopMenu.innerHTML = `
-  <li><a href="products.html">${data.products}</a></li>
-  <li><a href="contact.html">${data.contact}</a></li>
-  <li><a href="billing.html">${data.billing}</a></li>
+  <li><a href="${productsPage}">${data.products}</a></li>
+  <li><a href="${contactPage}">${data.contact}</a></li>
+  <li><a href="${billingPage}">${data.billing}</a></li>
 `;
   }
 
@@ -54,8 +55,9 @@ function renderContent(lang) {
         <button class="lang-btn" onclick="setLang('en')">EN</button>
         <button class="lang-btn" onclick="setLang('es')">ES</button>
       </div>
+      <a href="${productsPage}">${data.products}</a>
+      <a href="${contactPage}">${data.contact}</a>
       <a href="${billingPage}">${data.billing}</a>
-      <a href="${contactsPage}">${data.contacts}</a>
     `;
   }
 
