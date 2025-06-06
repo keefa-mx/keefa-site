@@ -177,8 +177,9 @@ section {
 .lang-switch {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  padding-right: 1%;
+  flex-direction: column;
+  gap: clamp(4px, 1vh, 12px);
+  margin-left: clamp(8px, 2vw, 24px);
 }
 
 .lang-btn {
