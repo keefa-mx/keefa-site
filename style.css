@@ -38,7 +38,6 @@ svg {
   align-items: center;
   height: 100%;
   gap: clamp(8px, 2vw, 24px);
-  margin-left: clamp(12px, 2vw, 32px);
   flex-shrink: 0;
 }
 
@@ -88,7 +87,7 @@ svg {
 /* ---------- Горизонтальное меню (desktop) ---------- */
 .desktop-menu {
   display: none;
-  margin-left: clamp(16px, 3vw, 32px);
+  margin-left: clamp(8px, 1vw, 16px);
 }
 
 .desktop-menu ul {
