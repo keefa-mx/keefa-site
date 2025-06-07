@@ -33,13 +33,6 @@ svg {
   padding-right: clamp(12px, 3vw, 40px);
 }
 
-/* Логотип + языки + меню */
-.left-block {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .logo-block {
   display: flex;
   align-items: center;
