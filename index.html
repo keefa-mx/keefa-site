@@ -10,13 +10,15 @@
 <body>
 
   <header class="header">
-      <div class="logo-block">
-        <img src="logo.svg" class="logo" alt="Keefa Logo"/>
-        <div class="lang-switch">
-          <button class="lang-btn">🇺🇸</button>
-          <button class="lang-btn">🇲🇽</button>
-        </div>
+    <img src="logo.svg" class="logo" alt="Keefa Logo"/>
+    
+    <div class="lang-dropdown">
+      <button id="lang-toggle" class="lang-icon">🌐</button>
+      <div id="lang-menu" class="lang-menu hidden">
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="es">Español</button>
       </div>
+    </div>
         
       <nav class="desktop-menu">
         <ul></ul>
