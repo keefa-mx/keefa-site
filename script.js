@@ -33,12 +33,23 @@ const translations = {
   }
 };
 
-function renderContent(lang) {
-  const data = translations[lang];
-  const productsPage = '/products';
-  const appPage = '/app';
-  const contactPage = '/contact';
-  const billingPage = '/billing';
+function detectLang () {
+  const saved = localStorage.getItem('lang');
+  if (saved) return saved;
+
+  const navLang = (navigator.language || 'en').slice(0,2).toLowerCase();
+  return navLang === 'es' ? 'es' : 'en';
+}
+
+function renderContent (lang) {
+  const data = translations[lang] || translations.en;
+
+  const links = {
+    products: '/products/',
+    app:      '/app/',
+    contact:  '/contact/',
+    billing:  '/billing/'
+  };
 
   // Desktop menu
   const desktopMenu = document.getElementById('desktopMenu');
@@ -94,28 +105,64 @@ function renderContent(lang) {
   localStorage.setItem('lang', lang);
 
   // Reinitialize hamburger menu
-  initHamburgerMenu();
+  initHamburger();
+  initLangButtonsInsideMobile();
 }
 
 function setLang(lang) {
   renderContent(lang);
 }
 
-function initHamburgerMenu() {
-  const hamburger = document.querySelector('.hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const body = document.body;
+function initHamburger () {
+  const burger = document.querySelector('.hamburger');
+  const mob    = document.getElementById('mobileMenu');
+  if (!burger || !mob) return;
 
-  if (hamburger && mobileMenu) {
-    hamburger.onclick = () => {
-      mobileMenu.classList.toggle('open');
-      hamburger.classList.toggle('open');
-      body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  burger.onclick = () => {
+    mob.classList.toggle('open');
+    burger.classList.toggle('open');
+    document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+  };
+}
+
+function initLangDropdown () {
+  const toggle = document.getElementById('lang-toggle');
+  const menu   = document.getElementById('lang-menu');
+  if (!toggle || !menu) return;
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove('show');
+    }
+  });
+
+  menu.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setLang(btn.dataset.lang);
+      menu.classList.remove('show');
+    });
+  });
+}
+
+function initLangButtonsInsideMobile () {
+  const mob = document.getElementById('mobileMenu');
+  if (!mob) return;
+
+  mob.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.onclick = () => {
+      setLang(btn.dataset.lang);
+      document.querySelector('.hamburger').click(); // закрыть меню
     };
-  }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const lang = localStorage.getItem('lang') || 'en';
-  setLang(lang);
+  const initialLang = detectLang();
+  setLang(initialLang);
+
+  initLangDropdown();   // иконка 🌐
 });
