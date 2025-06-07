@@ -33,18 +33,19 @@ svg {
   padding-right: clamp(12px, 3vw, 40px);
 }
 
-.logo-block {
-  display: flex;
-  align-items: center;
-  gap: clamp(8px, 2vw, 24px);
-  height: 100%;
-  flex-shrink: 0;
-}
-
 .logo {
   height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
+}
+
+.lang-icon {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  margin-left: auto;
 }
 
 /* ---------- Гамбургер: по умолчанию показываем ---------- */
@@ -52,14 +53,14 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: clamp(28px, 5vh, 40px);      /* Адаптивная высота */
+  height: clamp(28px, 5vh, 40px);
   aspect-ratio: 1.2 / 1;
   background: #ABFF33;
   border: none;
   cursor: pointer;
   border-radius: clamp(4px, 1vw, 8px); /* Скругление углов */
   padding: clamp(4px, 1vh, 8px);       /* Адаптивный отступ внутри */
-  margin-left: clamp(8px, 2vw, 16px);
+  margin-left: auto;
   z-index: 1001;
 }
 
