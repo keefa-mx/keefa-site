@@ -77,10 +77,10 @@ function renderContent(lang) {
   const mobileList = mobileMenu.querySelector('ul');
   if (mobileList) {
     mobileList.innerHTML = `
-      <a href="${productsPage}">${data.products}</a>
-      <a href="${appPage}">${data.app}</a>
-      <a href="${contactPage}">${data.contact}</a>
-      <a href="${billingPage}">${data.billing}</a>
+      <li><a href="${productsPage}">${data.products}</a></li>
+      <li><a href="${appPage}">${data.app}</a></li>
+      <li><a href="${contactPage}">${data.contact}</a></li>
+      <li><a href="${billingPage}">${data.billing}</a></li>
     `;
   }
 
