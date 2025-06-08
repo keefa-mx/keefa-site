@@ -59,7 +59,6 @@ function renderContent(lang) {
   const appPage = '/app';
   const contactPage = '/contact';
   const billingPage = '/billing';
-  };
 
   /* ---- десктоп‑меню ---- */
   const desktopMenu = document.getElementById('desktopMenu');
