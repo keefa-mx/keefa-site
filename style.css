@@ -107,7 +107,7 @@ svg {
 }
 
 /* ---------- Мобильное меню (выезжает поверх) ---------- */
-.mobile-menu {
+.mobileMenu {
   display: none;                 /* по умолчанию скрыто */
   flex-direction: column;
   position: fixed;
@@ -124,7 +124,7 @@ svg {
   z-index: 999;
 }
 
-.mobile-menu a {
+.mobileMenu a {
   font-family: 'Righteous', sans-serif;
   font-size: 1.5rem;
   color: #000;
@@ -132,18 +132,18 @@ svg {
 }
 
 /* класс, который добавляет JS при открытии */
-.mobile-menu.open {
+.mobileMenu.open {
   display: flex;
 }
 
 /* -------------------- Медиа‑запрос: десктоп ≥ 431 px -------------------- */
 @media (min-width: 431px) {
   .hamburger,
-  .mobile-menu {
+  .mobileMenu {
     display: none !important;    /* скрываем бургер и мобильное меню */
   }
 
-  .desktop-menu {
+  .desktopMenu {
     display: block;              /* показываем горизонтальное меню */
   }
 }
