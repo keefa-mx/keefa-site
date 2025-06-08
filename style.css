@@ -89,7 +89,7 @@ svg {
   align-items: center;
 }
 
-.desktop-menu li a {
+.desktopMenu li a {
   display: inline-block;
   background: none;
   color: #000;
@@ -102,7 +102,7 @@ svg {
   border-radius: 0; /* убираем скругления */
 }
 
-.desktop-menu li a:hover {
+.desktopMenu li a:hover {
   color: #ABFF33; /* просто меняем цвет текста при наведении */
 }
 
