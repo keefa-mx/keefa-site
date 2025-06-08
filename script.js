@@ -62,8 +62,9 @@ function renderContent(lang) {
 
   /* ---- десктоп‑меню ---- */
   const desktopMenu = document.getElementById('desktopMenu');
-  if (desktopMenu) {
-    desktopMenu.innerHTML = `
+  const desktopList = desktopMenu.querySelector('ul');
+  if (desktopList) {
+    desktopList.innerHTML = `
       <li><a href="${productsPage}">${data.products}</a></li>
       <li><a href="${appPage}">${data.app}</a></li>
       <li><a href="${contactPage}">${data.contact}</a></li>
