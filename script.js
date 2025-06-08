@@ -41,9 +41,7 @@ const translations = {
   }
 };
 
-/* -------------------------------------------------
-   2.  Определяем язык
-------------------------------------------------- */
+/*------------------------Detecting Browser Language------------------------*/
 function detectLang() {
   const saved = localStorage.getItem('lang');
   if (saved) return saved;
@@ -52,43 +50,33 @@ function detectLang() {
   return nav === 'es' ? 'es' : 'en';
 }
 
-/* -------------------------------------------------
-   3.  Рендер контента
-------------------------------------------------- */
+/* -------------------------------Links----------------------------------- */
 function renderContent(lang) {
-  const t = translations[lang] || translations.en;
-
-  /* URL‑маршруты */
-  const links = {
-    products: '/products/',
-    app:      '/app/',
-    contact:  '/contact/',
-    billing:  '/billing/'
+  const productsPage = '/products';
+  const appPage = '/app';
+  const contactPage = '/contact';
+  const billingPage = '/billing';
   };
 
   /* ---- десктоп‑меню ---- */
-  const desk = document.getElementById('desktopMenu');
-  if (desk) {
-    desk.innerHTML = `
-      <li><a href="${links.products}">${t.menu.products}</a></li>
-      <li><a href="${links.app}">${t.menu.app}</a></li>
-      <li><a href="${links.contact}">${t.menu.contact}</a></li>
-      <li><a href="${links.billing}">${t.menu.billing}</a></li>
+  const desktopMenu = document.getElementById('desktopMenu');
+  if (desktopMenu) {
+    desktopMenu.innerHTML = `
+      <li><a href="${productsPage}">${data.products}</a></li>
+      <li><a href="${appPage}">${data.app}</a></li>
+      <li><a href="${contactPage}">${data.contact}</a></li>
+      <li><a href="${billingPage}">${data.billing}</a></li>
     `;
   }
 
   /* ---- мобильное меню ---- */
-  const mob = document.getElementById('mobileMenu');
-  if (mob) {
-    mob.innerHTML = `
-      <div class="mobile-lang-switch">
-        <button class="lang-btn" data-lang="en">🇺🇸 EN</button>
-        <button class="lang-btn" data-lang="es">🇲🇽 ES</button>
-      </div>
-      <a href="${links.products}">${t.menu.products}</a>
-      <a href="${links.app}">${t.menu.app}</a>
-      <a href="${links.contact}">${t.menu.contact}</a>
-      <a href="${links.billing}">${t.menu.billing}</a>
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (mobileMenu) {
+    mobileMenu.innerHTML = `
+      <a href="${productsPage}">${data.products}</a>
+      <a href="${appPage}">${data.app}</a>
+      <a href="${contactPage}">${data.contact}</a>
+      <a href="${billingPage}">${data.billing}</a>
     `;
   }
 
