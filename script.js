@@ -60,7 +60,7 @@ function renderContent(lang) {
   const contactPage = '/contact';
   const billingPage = '/billing';
 
-  /* ---- десктоп‑меню ---- */
+  /* ------------------------------Desktop Menu---------------------------- */
   const desktopMenu = document.getElementById('desktopMenu');
   const desktopList = desktopMenu.querySelector('ul');
   if (desktopList) {
@@ -72,10 +72,11 @@ function renderContent(lang) {
     `;
   }
 
-  /* ---- мобильное меню ---- */
+  /* -----------------------------Mobile Menu----------------------------- */
   const mobileMenu = document.getElementById('mobileMenu');
-  if (mobileMenu) {
-    mobileMenu.innerHTML = `
+  const mobileList = mobileMenu.querySelector('ul');
+  if (mobileList) {
+    mobileList.innerHTML = `
       <a href="${productsPage}">${data.products}</a>
       <a href="${appPage}">${data.app}</a>
       <a href="${contactPage}">${data.contact}</a>
