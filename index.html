@@ -10,22 +10,47 @@
 <body>
 
   <header class="header">
-    <img src="logo.svg" class="logo" alt="Keefa Logo"/>
-    
-    <nav class="desktopMenu" id="desktopMenu">
-      <ul></ul>
-    </nav>
+/* ------------------------Desktop Header----------------------- */
+    <div class="desktopHeader">
+      <img src="logo.svg" class="logo" alt="Keefa Logo"/>
+/* -----------------------Desktop Menu-------------------------- */
+      <nav class="desktopMenu" id="desktopMenu">
+        <ul></ul>
+      </nav>
+/* -----------------------Language Button------------------------ */
+      <div class="langDropdown" id="langDropdown">
+        <button id="langIcon" aria-label="Choose language">🌐</button>
+        <div id="langMenu" class="langMenu">
+          <button class="langBtn" data-lang="en">English</button>
+          <button class="langBtn" data-lang="es">Español</button>
+        </div>
+      </div>
 
-    <button class="hamburger" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    
+    </div>
+
+/* -----------------------Mobile Header--------------------------- */
+    <div class="mobileHeader">
+      <img src="logo.svg" class="logo" alt="Keefa Logo"/>
+/* -----------------------Lang Btn + Hamburger Module------------------- */
+      <div class="mobileModule">
+/* -----------------------Language Button------------------------ */
+        <div class="langDropdown" id="langDropdown">
+          <button id="langIcon" aria-label="Choose language">🌐</button>
+          <div id="langMenu" class="langMenu">
+            <button class="langBtn" data-lang="en">English</button>
+            <button class="langBtn" data-lang="es">Español</button>
+          </div>
+        </div>
+/* ----------------------Hamburger------------------------ */
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+/* ----------------------Mobile Menu---------------------- */
     <nav class="mobileMenu" id="mobileMenu">
       <ul></ul>
     </nav>
-    
   </header>
 
   <section id="about-us"></section>
