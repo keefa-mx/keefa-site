@@ -14,14 +14,19 @@ body {
   color: #000;
 }
 
-img,
-svg {
-  max-width: 100%;
-  height: auto;
+.logo {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
-/* -------------------- Header -------------------- */
-.header {
+.langIcon {
+  height: 20%;
+  aspect-ratio: 1 / 1;
+}
+
+/* --------------------Desktop Header-------------------- */
+.desktopHeader {
   height: 10vh;
   background: #CCCCCC;
   display: flex;
@@ -30,12 +35,6 @@ svg {
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding-right: clamp(12px, 3vw, 40px);
-}
-
-.logo {
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
 }
 
 /* ---------- Гамбургер: по умолчанию показываем ---------- */
