@@ -52,6 +52,9 @@ function detectLang() {
 
 /* -------------------------------Links----------------------------------- */
 function renderContent(lang) {
+  const t = translations[lang];
+  const data = t.menu;
+   
   const productsPage = '/products';
   const appPage = '/app';
   const contactPage = '/contact';
