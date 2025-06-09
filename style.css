@@ -167,58 +167,18 @@ body {
 @media (min-width: 431px) {
   .hamburger,
   .mobileMenu {
-    display: none !important;    /* скрываем бургер и мобильное меню */
+    display: none;
   }
 
   .desktopMenu {
-    display: block;              /* показываем горизонтальное меню */
+    display: block;
   }
 }
-
-.mobile-lang-switch {
-  display: flex;
-  gap: 3%;
-  justify-content: center;
-}
-
-.mobile-lang-switch .lang-btn {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  background: transparent;
-  border-width: clamp(0.5px, 0.2vw, 1.5px) solid #000;
-  border-radius: clamp(4px, 1vw, 12px);
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.mobile-lang-switch .lang-btn:hover {
-  background-color: #eee;
-}
-
 /* -------------------- Остальной контент -------------------- */
 section {
   width: 70vw;
   margin: 0 auto;
   padding: 0;
-}
-
-.lang-switch {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(2px, 0.5vh, 6px);
-}
-
-.lang-btn {
-  display: flex;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.lang-btn:hover,
-.lang-btn:focus {
-  transform: scale(1.2);
-  outline: none;
 }
 
 /* --- Cards, products, features --- */
