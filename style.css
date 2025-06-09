@@ -13,12 +13,6 @@ body {
   background: #fff;
   color: #000;
 }
-
-.langIcon {
-  height: 20%;
-  aspect-ratio: 1 / 1;
-}
-
 /* ------------------------Desktop Header------------------------ */
 .desktopHeader {
   height: 10vh;
@@ -34,6 +28,11 @@ body {
   height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
+}
+
+.langIcon {
+  height: 20%;
+  aspect-ratio: 1 / 1;
 }
 /* ------------------------Desktop Menu------------------------- */
 .desktopMenu {
