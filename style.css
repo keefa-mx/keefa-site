@@ -125,8 +125,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: clamp(28px, 5vh, 40px);
-  aspect-ratio: 1.2 / 1;
+  height: clamp(24px, 4vh, 32px);
+  aspect-ratio: 1.2 / 1;  
   background: #ABFF33;
   border: none;
   cursor: pointer;
