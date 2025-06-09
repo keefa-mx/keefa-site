@@ -132,51 +132,12 @@ function initHamburger() {
     document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
   };
 }
-
-/* -------------------------------------------------
-   6.  Dropdown с планетой 🌐
-------------------------------------------------- */
-function initLangDropdown() {
-  const toggle = document.getElementById('lang-toggle');
-  const menu   = document.getElementById('lang-menu');
-  if (!toggle || !menu) return;
-
-  toggle.addEventListener('click', () => menu.classList.toggle('show'));
-
-  document.addEventListener('click', e => {
-    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-      menu.classList.remove('show');
-    }
-  });
-
-  menu.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.onclick = () => {
-      setLang(btn.dataset.lang);
-      menu.classList.remove('show');
-    };
-  });
-}
-
-/* -------------------------------------------------
-   7.  Кнопки языков внутри мобильного меню
-------------------------------------------------- */
-function initLangButtonsInsideMobile() {
-  const mob = document.getElementById('mobileMenu');
-  if (!mob) return;
-
-  mob.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.onclick = () => {
-      setLang(btn.dataset.lang);
-      document.querySelector('.hamburger')?.click();  // Закроет меню
-    };
-  });
-}
-
 /* -------------------------------------------------
    8.  Запуск после загрузки страницы
 ------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
   const initialLang = detectLang();
   setLang(initialLang);
-  initLangDropdown();  // планета‑dropdown
+  initLangDropdown();
+
 });
