@@ -181,13 +181,19 @@ body {
   display: flex;
 }
 
+.desktopHeader {
+  display: none;
+}
+
 /* -------------------- Медиа‑запрос: десктоп ≥ 431 px -------------------- */
 @media (min-width: 431px) {
+  .mobileHeader,
   .hamburger,
   .mobileMenu {
     display: none;
   }
 
+  .desktopHeader,
   .desktopMenu {
     display: block;
   }
