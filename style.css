@@ -94,7 +94,26 @@ body {
   cursor: pointer;
 }
 /* ---------------------------Mobile Header--------------------------- */
-  
+.mobileHeader {
+  height: 10vh;
+  background: #CCCCCC;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.langIcon {
+  height: 20%;
+  aspect-ratio: 1 / 1;
+}
 /* ---------- Гамбургер: по умолчанию показываем ---------- */
 .hamburger {
   display: flex;
