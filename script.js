@@ -4,7 +4,7 @@
 const translations = {
   en: {
     menu: {
-      products: "Products ⌄",
+      products: "Products",
       app:      "Keefa App",
       contact:  "Contact",
       billing:  "Billing"
@@ -23,7 +23,7 @@ const translations = {
 
   es: {
     menu: {
-      products: "Productos ⌄",
+      products: "Productos",
       app:      "Keefa App",
       contact:  "Contacto",
       billing:  "Facturación"
