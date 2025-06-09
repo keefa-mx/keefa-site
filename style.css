@@ -73,6 +73,8 @@ html {
   width: auto;
   cursor: pointer;
   position: relative;
+  background: none;
+  border: none;
 }
 
 .langIconDesktop {
