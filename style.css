@@ -115,6 +115,11 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
+
+.mobileModule {
+  display: flex;
+  margin-left: auto;
+}
 /* ---------- Гамбургер: по умолчанию показываем ---------- */
 .hamburger {
   display: flex;
