@@ -30,9 +30,11 @@ body {
   object-fit: contain;
 }
 
-.langIcon {
-  height: 20%;
-  aspect-ratio: 1 / 1;
+.langIconDesktop {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 /* ------------------------Desktop Menu------------------------- */
 .desktopMenu {
