@@ -106,7 +106,7 @@ function renderContent(lang) {
 /* ----------------------Saving Preferred Language-------------------- */
   document.documentElement.lang = lang;
   localStorage.setItem('lang', lang);
-
+}
 
 /* ----------------------Manual Language Change---------------------- */
 function setLang(lang) {
@@ -175,5 +175,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renderContent(initialLang);
    
   initHamburger();
-  initLangDropdowns();
+  initLangDropdown();
 });
