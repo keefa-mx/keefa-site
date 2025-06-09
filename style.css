@@ -28,10 +28,12 @@ body {
   height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
+  flex: 1;
 }
 /* ------------------------Desktop Menu------------------------- */
 .desktopMenu {
   display: none;
+  flex: 2;
 }
 
 .desktopMenu ul {
@@ -65,6 +67,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  flex: 1;
 }
 
 .langIconDesktop {
