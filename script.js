@@ -102,42 +102,78 @@ function renderContent(lang) {
       .join('');
   }
 
-  /* ---- атрибут lang и сохранение ---- */
+
+/* ----------------------Saving Preferred Language-------------------- */
   document.documentElement.lang = lang;
   localStorage.setItem('lang', lang);
 
-  /* ---- переинициализация зависимостей ---- */
-  initHamburger();
-  initLangButtonsInsideMobile();
-}
 
-/* -------------------------------------------------
-   4.  Смена языка вручную
-------------------------------------------------- */
+/* ----------------------Manual Language Change---------------------- */
 function setLang(lang) {
+  if (!translations[lang]) return;
   renderContent(lang);
 }
 
-/* -------------------------------------------------
-   5.  Бургер‑меню
-------------------------------------------------- */
-function initHamburger() {
-  const burger = document.querySelector('.hamburger');
-  const mob    = document.getElementById('mobileMenu');
-  if (!burger || !mob) return;
 
-  burger.onclick = () => {
-    mob.classList.toggle('open');
-    burger.classList.toggle('open');
-    document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
-  };
+/* ---------------------Hamburger Menu---------------------------- */
+function initHamburger() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (!hamburger || !mobileMenu) return;
+
+  hamburger.addEventListener('click', () => {
+    const opened = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    document.body.style.overflow = opened ? 'hidden' : ''; 
+  });
 }
-/* -------------------------------------------------
-   8.  Запуск после загрузки страницы
-------------------------------------------------- */
+
+
+/* ---------------------Language Dropdown Desktop and Mobile--------------------- */
+function initLangDropdown() {
+  const pairs = [
+     { btn: 'langIconDesktop', menu: 'langMenuDesktop' },
+     { btn: 'langIconMobile', menu: 'langMenuMobile' }
+  ];
+  pairs.forEach(({ btn, menu }) => {
+     const icon = document.getElementById(btn);
+     const list = document.getElementById(menu);
+     if (!icon || !list) return;
+
+     icon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        list.classList.toggle('show');
+     });
+  });
+   
+/* -----------------------Close Language Menu By Clicking Outside-------------------- */
+document.addEventListener('click', (e) => {
+   pairs.forEach(({ btn, menu }) => {
+      const icon = document.getElementById(btn);
+      const list = document.getElementById(menu);
+      if (!icon || !list) return;
+
+      if(!icon.contains(e.target) && !list.contains(e.target)) {
+         list.classList.remove('show');
+      }
+   });
+});
+
+/*------------------------Close Language Menu By Clicking LangIcon-------------------------- */
+document.querySelectorAll('.langBtn').forEach(btn => {
+   btn.addEventListener('click', () => {
+      setLang(btn.dataset.lang);
+      document.querySelectorAll('.langMenuDesktop, .langMenuMobile')
+              .forEach(menu => menu.classList.remove('show'));
+   });
+});
+}
+
+/* -------------------------Start After DOM Content Loaded------------------------ */
 document.addEventListener('DOMContentLoaded', () => {
   const initialLang = detectLang();
-  setLang(initialLang);
-  initLangDropdown();
-
+  renderContent(initialLang);
+   
+  initHamburger();
+  initLangDropdowns();
 });
