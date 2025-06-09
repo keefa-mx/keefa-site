@@ -101,7 +101,6 @@ function renderContent(lang) {
       .map(item => `<div class="feature-item">${item}</div>`)
       .join('');
   }
-}
 
 /* ----------------------Saving Preferred Language-------------------- */
   document.documentElement.lang = lang;
