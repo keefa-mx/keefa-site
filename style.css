@@ -124,6 +124,7 @@ html {
 .mobileModule {
   display: flex;
   margin-left: auto;
+  margin-right: 3%;
 }
 /* ---------- Гамбургер: по умолчанию показываем ---------- */
 .hamburger {
@@ -132,7 +133,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   height: clamp(24px, 4vh, 32px);
-  aspect-ratio: 1 / 1;  
+  aspect-ratio: 1.2 / 1;  
   background: #ABFF33;
   border: none;
   cursor: pointer;
