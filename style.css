@@ -68,10 +68,9 @@ html {
   color: #ABFF33; /* просто меняем цвет текста при наведении */
 }
 /* ----------------------Language Dropdown---------------------- */
-.langIconDesktop {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
+.langIconDesktop svg {
+  height: 20%;
+  aspect-ratio: 1 / 1;
   cursor: pointer;
   position: relative;
 }
