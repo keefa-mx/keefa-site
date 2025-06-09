@@ -90,7 +90,7 @@ html {
 .langMenuDesktop {
   display: none;
   position: absolute;
-  top: 36px;
+  top: 60%;
   right: 0;
   background: #fff;
   border: none;
