@@ -5,9 +5,10 @@ const translations = {
   en: {
     menu: {
       products: "Products",
-      app:      "Keefa App",
-      contact:  "Contact",
-      billing:  "Billing"
+      app: "Keefa App",
+      center: "Engineering Center",
+      contact: "Contact",
+      billing: "Billing"
     },
     sections: {
       aboutTitle: "About Us",
@@ -24,9 +25,10 @@ const translations = {
   es: {
     menu: {
       products: "Productos",
-      app:      "Keefa App",
-      contact:  "Contacto",
-      billing:  "Facturación"
+      app: "Keefa App",
+      center: "Centro de Ingeniería",
+      contact: "Contacto",
+      billing: "Facturación"
     },
     sections: {
       aboutTitle: "Acerca de Nosotros",
@@ -57,6 +59,7 @@ function renderContent(lang) {
    
   const productsPage = '/products';
   const appPage = '/app';
+  const centerPage = '/center';
   const contactPage = '/contact';
   const billingPage = '/billing';
 
@@ -67,6 +70,7 @@ function renderContent(lang) {
     desktopList.innerHTML = `
       <li><a href="${productsPage}">${data.products}</a></li>
       <li><a href="${appPage}">${data.app}</a></li>
+      <li><a href="${centerPage}">${data.center}</a></li>
       <li><a href="${contactPage}">${data.contact}</a></li>
       <li><a href="${billingPage}">${data.billing}</a></li>
     `;
@@ -79,6 +83,7 @@ function renderContent(lang) {
     mobileList.innerHTML = `
       <li><a href="${productsPage}">${data.products}</a></li>
       <li><a href="${appPage}">${data.app}</a></li>
+      <li><a href="${centerPage}">${data.center}</a></li>
       <li><a href="${contactPage}">${data.contact}</a></li>
       <li><a href="${billingPage}">${data.billing}</a></li>
     `;
