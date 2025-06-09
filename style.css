@@ -127,7 +127,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: clamp(24px, 4vh, 32px);
-  aspect-ratio: 1.2 / 1;  
+  aspect-ratio: 1 / 1;  
   background: #ABFF33;
   border: none;
   cursor: pointer;
