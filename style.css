@@ -14,12 +14,6 @@ body {
   color: #000;
 }
 
-.logo {
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-}
-
 .langIcon {
   height: 20%;
   aspect-ratio: 1 / 1;
@@ -34,6 +28,12 @@ body {
   position: relative;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 /* ------------------------Desktop Menu------------------------- */
 .desktopMenu {
