@@ -82,11 +82,7 @@ html {
 .langIconDesktop {
   position: relative;
   background: none;
-  border-color: #000;
-  border-radius: clamp(4px, 1vw, 8px);
-  font-family: "Inter", sans-serif;
-  font-size: clamp(16px, 1.8vw, 20px);
-  color: #000;
+  border: none;
   padding: 0;
   cursor: pointer;
 }
@@ -113,6 +109,8 @@ html {
   padding: 6px 12px;
   width: 100%;
   text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.75rem, 1.5vw, 0.95rem);
   cursor: pointer;
 }
 /* ---------------------------Mobile Header--------------------------- */
