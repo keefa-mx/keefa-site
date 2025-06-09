@@ -69,8 +69,8 @@ html {
 }
 /* ----------------------Language Dropdown---------------------- */
 .langIconDesktop svg {
-  height: 20%;
-  aspect-ratio: 1 / 1;
+  height: clamp(24px, 5vh, 48px);
+  width: auto;
   cursor: pointer;
   position: relative;
 }
