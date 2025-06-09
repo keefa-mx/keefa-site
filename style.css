@@ -19,6 +19,7 @@ body {
   background: #CCCCCC;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -28,12 +29,11 @@ body {
   height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
-  flex: 1;
+  flex-shrink: 0;
 }
 /* ------------------------Desktop Menu------------------------- */
 .desktopMenu {
   display: none;
-  flex: 2;
 }
 
 .desktopMenu ul {
@@ -67,7 +67,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  flex: 1;
+  position: relative;
 }
 
 .langIconDesktop {
