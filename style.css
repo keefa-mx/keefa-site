@@ -96,7 +96,6 @@ html {
   border-radius: 4px;
   z-index: 100;
   padding: 6px;
-  display: flex;
   flex-direction: row;
   gap: 0;
 }
