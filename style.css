@@ -92,7 +92,7 @@ html {
   position: absolute;
   top: 70%;
   right: 0;
-  background: linear-gradient (to bottom, #f0f0f0, #e0e0e0);
+  background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
   border-radius: 4px;
   z-index: 100;
   padding: 6px;
