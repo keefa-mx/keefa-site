@@ -67,7 +67,7 @@ html {
 }
 
 .desktopMenu li a:hover {
-  color: #ABFF33; /* просто меняем цвет текста при наведении */
+  color: #ABFF33;
 }
 /* ----------------------Language Dropdown---------------------- */
 .langIconDesktop svg {
@@ -92,8 +92,7 @@ html {
   position: absolute;
   top: 70%;
   right: 0;
-  background: #fff;
-  border: none;
+  background: linear-gradient (to bottom, #f0f0f0, #e0e0e0);
   border-radius: 4px;
   z-index: 100;
   padding: 6px;
@@ -112,6 +111,11 @@ html {
   font-family: "Inter", sans-serif;
   font-size: clamp(0.75rem, 1.5vw, 0.95rem);
   cursor: pointer;
+  white-space: nowrap;
+}
+
+.langBtn:not(:last-child) {
+  border-right: 1px solid #b0b0b0;
 }
 /* ---------------------------Mobile Header--------------------------- */
 .mobileHeader {
