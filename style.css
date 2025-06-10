@@ -110,12 +110,13 @@ html {
   text-align: left;
   font-family: "Inter", sans-serif;
   font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+  color: #000;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .langBtn:not(:last-child) {
-  border-right: 1px solid #b0b0b0;
+  border-right: 1px solid #000;
 }
 /* ---------------------------Mobile Header--------------------------- */
 .mobileHeader {
