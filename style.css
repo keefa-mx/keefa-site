@@ -96,6 +96,9 @@ html {
   border-radius: 4px;
   z-index: 100;
   padding: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
 }
 
 .langMenuDesktop.show {
@@ -106,7 +109,7 @@ html {
   background: none;
   border: none;
   padding: 6px 12px;
-  width: 100%;
+  width: auto;
   text-align: left;
   font-family: "Inter", sans-serif;
   font-size: clamp(0.75rem, 1.5vw, 0.95rem);
