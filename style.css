@@ -289,9 +289,9 @@ html {
 .company-name-insvg {
   position: absolute;
   font-family: 'Righteous', sans-serif;
-  font-size: clamp(1 rem, 4vw, 3rem);
+  font-size: clamp(1.2rem, 5vw, 50px);
   color: #000;
-  top: 30%;
+  top: 60%;
 }
 
 .products-container {
