@@ -278,8 +278,7 @@ html {
 /* --- Cards, products, features --- */
 .CitySection {
   position: relative;
-  width: 100%;
-  height: auto;
+  display: inline-block;
 }
 
 .city {
