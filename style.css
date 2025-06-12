@@ -291,7 +291,7 @@ html {
 .company-name-insvg {
   position: absolute;
   font-family: 'Righteous', sans-serif;
-  font-size: clamp(2.4rem, 10vw, 100px);
+  font-size: clamp(4.8rem, 20vw, 200px);
   color: #000;
   top: 60%;
 }
