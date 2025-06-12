@@ -278,20 +278,12 @@ html {
 /* --- Cards, products, features --- */
 .CitySection {
   display: inline-block;
-  position: relative;
 }
 
 .city {
   width: 100%;
   height: auto;
   display: block;
-}
-.company-name-insvg {
-  position: absolute;
-  font-family: 'Righteous', sans-serif;
-  font-size: clamp(2.4rem, 10vw, 100px);
-  color: #000;
-  top: 60%;
 }
 
 .products-container {
