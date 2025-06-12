@@ -277,25 +277,19 @@ html {
 }
 /* --- Cards, products, features --- */
 .CitySection {
-  position: relative;
-  display: inline-block;
-}
-
-.city {
-  width: 100%;
+  background-image: url('city.svg');
+  background-size: container;
+  background-position: center;
+  width: 100%; 
   height: auto;
-  display: block;
+  display: flex;
+  align-items: flex-end;
 }
 
 .company-name-insvg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
   font-family: 'Righteous', sans-serif;
   font-size: clamp(4.8rem, 20vw, 200px);
   color: #000;
-  top: 60%;
 }
 
 .products-container {
