@@ -178,7 +178,6 @@ html {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 60%;
 }
 
 .hamburger.open span:nth-child(2) {
