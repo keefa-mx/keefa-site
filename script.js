@@ -11,9 +11,8 @@ const translations = {
       billing: "Billing"
     },
     sections: {
-      aboutTitle: "About Us",
-      aboutP1:    "Keefa is a next generation tech brand focused on creating intelligent solutions...",
-      aboutP2:    "Our mission is to reshape everyday environments through innovation..."
+      leftColumn:    "Keefa is a next generation tech brand focused on creating intelligent solutions...",
+      rightColumn:    "Our mission is to reshape everyday environments through innovation..."
     },
     features: [
       "REGISTERED BRAND",
@@ -31,9 +30,8 @@ const translations = {
       billing: "Facturación"
     },
     sections: {
-      aboutTitle: "Acerca de Nosotros",
-      aboutP1:    "Keefa es una marca tecnológica de nueva generación...",
-      aboutP2:    "Nuestra misión es rediseñar los entornos cotidianos mediante la innovación..."
+      leftColumn:    "Keefa es una marca tecnológica de nueva generación...",
+      rightColumn:    "Nuestra misión es rediseñar los entornos cotidianos mediante la innovación..."
     },
     features: [
       "MARCA REGISTRADA",
@@ -63,6 +61,8 @@ function renderContent(lang) {
   const contactPage = '/contact';
   const billingPage = '/billing';
 
+  updateAboutSection(lang);
+
   /* ------------------------------Desktop Menu---------------------------- */
   const desktopMenu = document.getElementById('desktopMenu');
   const desktopList = desktopMenu.querySelector('ul');
@@ -90,13 +90,9 @@ function renderContent(lang) {
   }
 
   /* ---------------------- About Us ---------------------- */
-  const about = document.getElementById('about-us');
-  if (about) {
-    about.innerHTML = `
-      <h2>${t.sections.aboutTitle}</h2>
-      <p>${t.sections.aboutP1}</p>
-      <p>${t.sections.aboutP2}</p>
-    `;
+  function updateAboutSection(lang) {
+     document.getElementById('left-column').innerHTML = translations[lang].sections.leftColumn;
+     document.getElementById('right-column').innerHTML = translations[lang].sections.rightColumn;
   }
 
   /* ---- блок Features ---- */
