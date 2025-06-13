@@ -288,7 +288,7 @@ html {
 
 .intro {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(1.8rem, 3.8vw, 2.2rem);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
   line-height: 1.2;
   margin-right: 5%;
   margin-left: 5%;
