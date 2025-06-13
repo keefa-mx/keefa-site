@@ -275,7 +275,7 @@ html {
     display: flex;
   }
 }
-/* --- Cards, products, features --- */
+/* -------------------------- About Company Sections --------------------- */
 .CitySection {
   display: inline-block;
 }
@@ -289,9 +289,9 @@ html {
 .intro {
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(2rem, 4vw, 2.4rem);
-  line-height: 1.6;
-  margin-right: 15%;
-  margin-left: 15%;
+  line-height: 1;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .about-us {
