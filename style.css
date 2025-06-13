@@ -286,6 +286,22 @@ html {
   display: block;
 }
 
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15%;
+  margin-left: 15%;
+  gap: 5%;
+}
+
+.about-column {
+  flex: 1;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+}
+
 .products-container {
   display: block;
 }
