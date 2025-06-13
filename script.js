@@ -11,7 +11,8 @@ const translations = {
       billing: "Billing"
     },
     sections: {
-      leftColumn: "Keefa is a next-generation tech brand focused on creating intelligent solutions that transform residential, commercial, and public spaces into more robust and automated environments.",
+      intro: "Keefa is a next-generation tech brand focused on creating intelligent solutions that transform residential, commercial, and public spaces into more robust and automated environments.",
+      leftColumn: "Keefa is a next-generation tech brand... ",
       rightColumn: "Our mission is to reshape everyday environments through innovation..."
     },
     features: [
@@ -30,7 +31,8 @@ const translations = {
       billing: "Facturación"
     },
     sections: {
-      leftColumn: "Keefa es una marca tecnológica de nueva generación enfocada en crear soluciones inteligentes que transforman los espacios residenciales, comerciales y públicos en entornos más robustos y automatizados.",
+      intro: "Keefa es una marca tecnológica de nueva generación enfocada en crear soluciones inteligentes que transforman los espacios residenciales, comerciales y públicos en entornos más robustos y automatizados.",
+      leftColumn: "Keefa es una marca tecnológica de nueva generación...",
       rightColumn: "Nuestra misión es rediseñar los entornos cotidianos mediante la innovación..."
     },
     features: [
@@ -91,6 +93,7 @@ function renderContent(lang) {
 
   /* ---------------------- About Us ---------------------- */
   function updateAboutSection(lang) {
+     document.getElementById('intro').innerHTML = translations[lang].sections.intro;
      document.getElementById('left-column').innerHTML = translations[lang].sections.leftColumn;
      document.getElementById('right-column').innerHTML = translations[lang].sections.rightColumn;
   }
