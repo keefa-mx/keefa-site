@@ -167,7 +167,7 @@ html {
   display: block;
   width: 100%;
   height: clamp(2px, 0.5vh, 5px);
-  background-color: #ABFF33;
+  background-color: #CCCCCC;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
