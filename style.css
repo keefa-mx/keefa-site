@@ -154,7 +154,7 @@ html {
   justify-content: space-between;
   height: clamp(24px, 4vh, 32px);
   aspect-ratio: 1.2 / 1;  
-  background: #ABFF33;
+  background: #505050;
   border: none;
   cursor: pointer;
   border-radius: clamp(4px, 1vw, 8px); /* Скругление углов */
@@ -167,7 +167,7 @@ html {
   display: block;
   width: 100%;
   height: clamp(2px, 0.5vh, 5px);
-  background-color: #000;
+  background-color: #ABFF33;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
