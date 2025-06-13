@@ -11,8 +11,8 @@ const translations = {
       billing: "Billing"
     },
     sections: {
-      leftColumn:    "Keefa is a next generation tech brand focused on creating intelligent solutions...",
-      rightColumn:    "Our mission is to reshape everyday environments through innovation..."
+      leftColumn: "Keefa is a next-generation tech brand focused on creating intelligent solutions that transform residential, commercial, and public spaces into more robust and automated environments.",
+      rightColumn: "Our mission is to reshape everyday environments through innovation..."
     },
     features: [
       "REGISTERED BRAND",
@@ -30,8 +30,8 @@ const translations = {
       billing: "Facturación"
     },
     sections: {
-      leftColumn:    "Keefa es una marca tecnológica de nueva generación...",
-      rightColumn:    "Nuestra misión es rediseñar los entornos cotidianos mediante la innovación..."
+      leftColumn: "Keefa es una marca tecnológica de nueva generación enfocada en crear soluciones inteligentes que transforman los espacios residenciales, comerciales y públicos en entornos más robustos y automatizados.",
+      rightColumn: "Nuestra misión es rediseñar los entornos cotidianos mediante la innovación..."
     },
     features: [
       "MARCA REGISTRADA",
