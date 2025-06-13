@@ -297,7 +297,7 @@ html {
 .column {
   flex: 1;
 }
-.left {
+.intro {
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(2rem, 4vw, 2.4rem);
   line-height: 1.6;
