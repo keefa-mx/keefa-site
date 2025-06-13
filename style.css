@@ -286,6 +286,14 @@ html {
   display: block;
 }
 
+.intro {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.4rem);
+  line-height: 1.6;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
 .about-us {
   display: flex;
   flex-wrap: wrap;
@@ -294,16 +302,8 @@ html {
   gap: 5%;
 }
 
-.column {
+.about-column {
   flex: 1;
-}
-.intro {
-  font-family: 'Montserrat', sans-serif;
-  font-size: clamp(2rem, 4vw, 2.4rem);
-  line-height: 1.6;
-}
-
-.right {
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.6;
