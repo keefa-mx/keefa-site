@@ -289,7 +289,7 @@ html {
 .intro {
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1.5rem, 3.5vw, 2rem);
-  font-color: #404040;
+  color: 505050;
   line-height: 1.2;
   margin-right: 3%;
   margin-left: 3%;
