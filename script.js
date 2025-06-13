@@ -89,7 +89,7 @@ function renderContent(lang) {
     `;
   }
 
-  /* ---- блок About ---- */
+  /* ---------------------- About Us ---------------------- */
   const about = document.getElementById('about-us');
   if (about) {
     about.innerHTML = `
