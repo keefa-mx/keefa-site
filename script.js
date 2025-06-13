@@ -11,7 +11,7 @@ const translations = {
       billing: "Billing"
     },
     sections: {
-      intro: "Keefa is a next-generation tech brand focused on creating intelligent solutions that transform residential, commercial, and public spaces into more robust and automated environments.",
+      intro: "Keefa is <strong>a next-generation tech brand</strong> focused on creating intelligent solutions that transform <strong>residential, commercial, and public spaces</strong> into more <strong>robust and automated environments</strong>.",
       leftColumn: "Keefa is a next-generation tech brand... ",
       rightColumn: "Our mission is to reshape everyday environments through innovation..."
     },
