@@ -166,7 +166,7 @@ html {
 .hamburger span {
   display: block;
   width: 100%;
-  height: clamp(2px, 0.5vh, 5px);
+  height: clamp(1.8px, 0.45vh, 3.5px);
   background-color: #CCCCCC;
   border-radius: 2px;
   transition: all 0.3s ease;
