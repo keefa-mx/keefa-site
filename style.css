@@ -289,7 +289,7 @@ html {
 .intro {
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1.5rem, 3.5vw, 2rem);
-  font-color: #505050;
+  font-color: #404040;
   line-height: 1.2;
   margin-right: 3%;
   margin-left: 3%;
@@ -298,8 +298,8 @@ html {
 .about-us {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 10%;
+  margin-left: 10%;
   gap: 5%;
 }
 
@@ -307,12 +307,13 @@ html {
   flex: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 @media (max-width: 430px) {
   .about-us {
     flex-direction: column;
+    margin-top: 5%;
   }
 }
 
