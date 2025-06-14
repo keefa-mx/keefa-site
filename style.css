@@ -291,8 +291,8 @@ html {
   font-size: clamp(1.5rem, 3.5vw, 2rem);
   color: #505050;
   line-height: 1.2;
-  margin-right: 3%;
-  margin-left: 3%;
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 .about-us {
@@ -315,6 +315,29 @@ html {
   .about-us {
     flex-direction: column;
   }
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: auto;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.about-card {
+  width: 40vw;
+  background: #fff;
+  padding: 16px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  line-height: 1.5;
+}
+
+.about-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .products-container {
