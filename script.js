@@ -21,7 +21,7 @@ const translations = {
          items: [
             "item 1",
             "item 2",
-            "item 3,
+            "item 3",
          ]
       },
       {
@@ -87,6 +87,7 @@ function detectLang() {
 function renderContent(lang) {
   const t = translations[lang];
   const data = t.menu;
+  const cardsData = t.cards;
    
   const productsPage = '/products';
   const appPage = '/app';
@@ -94,6 +95,11 @@ function renderContent(lang) {
   const contactPage = '/contact';
   const billingPage = '/billing';
 
+  function updateAboutSection(lang) {
+    document.getElementById('intro').innerHTML = t.sections.intro;
+    document.getElementById('left-column').innerHTML = t.sections.leftColumn;
+    document.getElementById('right-column').innerHTML = t.sections.rightColumn;
+  }
   updateAboutSection(lang);
 
   /* ------------------------------Desktop Menu---------------------------- */
@@ -131,7 +137,7 @@ function renderContent(lang) {
 
 /* ------------------------ About Cards --------------------- */
   const aboutCards = document.getElementById('about-cards');
-  data.forEach(cardData => {
+  cardsData.forEach(cardData => {
      const card = document.createElement('div');
      card.classList.add('card');
 
@@ -146,7 +152,7 @@ function renderContent(lang) {
      });
      card.appendChild(title);
      card.appendChild(list);
-     container.appendChild(card);
+     aboutCards.appendChild(card);
   });
   /* ---- блок Features ---- */
   const feat = document.getElementById('features');
