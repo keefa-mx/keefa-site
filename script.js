@@ -45,7 +45,7 @@ const translations = {
             "item 2",
          ]
       }
-   ]
+   ],
     features: [
       "REGISTERED BRAND",
       "SOFTWARE ELABORATED IN MEXICO",
@@ -126,13 +126,6 @@ function renderContent(lang) {
       <li><a href="${contactPage}">${data.contact}</a></li>
       <li><a href="${billingPage}">${data.billing}</a></li>
     `;
-  }
-
-  /* ---------------------- About Us ---------------------- */
-  function updateAboutSection(lang) {
-     document.getElementById('intro').innerHTML = translations[lang].sections.intro;
-     document.getElementById('left-column').innerHTML = translations[lang].sections.leftColumn;
-     document.getElementById('right-column').innerHTML = translations[lang].sections.rightColumn;
   }
 
 /* ------------------------ About Cards --------------------- */
