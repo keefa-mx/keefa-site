@@ -13,7 +13,7 @@ const translations = {
     sections: {
       intro: "Keefa is <span style='font-weight: 700;'>a next-generation tech brand</span> focused on creating intelligent solutions that transform <span style='font-weight: 700;'>residential, commercial, and public spaces</span> into more <span style='font-weight: 700;'>robust and automated</span> environments.",
       leftColumn: "We design and develop products and systems that enhance the functionality, efficiency, and adaptability of <span style='font-weight: 700;'>private homes, hotels, restaurants, supermarkets,</span> and more.",
-      rightColumn: "Our mission is to reshape everyday environments through innovation — blending <span style='font-weight: 700;'>hardware, software, and AI</style> to make spaces responsive to the people who use them."
+      rightColumn: "Our mission is to reshape everyday environments through innovation — blending <span style='font-weight: 700;'>hardware, software, and AI</span> to make spaces responsive to the people who use them."
     },
     features: [
       "REGISTERED BRAND",
