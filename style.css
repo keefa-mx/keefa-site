@@ -320,13 +320,13 @@ html {
 .about-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: auto;
+  gap: 2vw;
   margin-right: 5vw;
   margin-left: 5vw;
+  margin-top: 2vh;
 }
 
 .card {
-  width: 40vw;
   background: #fff;
   padding: 16px;
   border: none;
