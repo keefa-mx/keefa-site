@@ -298,9 +298,10 @@ html {
 .about-us {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 10%;
-  margin-left: 10%;
-  gap: 5%;
+  margin-top: 5vh; 
+  margin-right: 10vw;
+  margin-left: 10vw;
+  gap: 5vw;
 }
 
 .about-column {
