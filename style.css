@@ -325,7 +325,7 @@ html {
   margin-left: 5vw;
 }
 
-.about-card {
+.card {
   width: 40vw;
   background: #fff;
   padding: 16px;
@@ -336,7 +336,7 @@ html {
   line-height: 1.5;
 }
 
-.about-card:hover {
+.card:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
