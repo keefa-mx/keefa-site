@@ -314,7 +314,6 @@ html {
 @media (max-width: 430px) {
   .about-us {
     flex-direction: column;
-    margin-top: 5%;
   }
 }
 
