@@ -15,6 +15,37 @@ const translations = {
       leftColumn: "We design and develop products and systems that enhance the functionality, efficiency, and adaptability of <span style='font-weight: 700;'>private homes, hotels, restaurants, supermarkets,</span> and more.",
       rightColumn: "Our mission is to reshape everyday environments through innovation — blending <span style='font-weight: 700;'>hardware, software, and AI</span> to make spaces responsive to the people who use them."
     },
+   cards: [
+      {
+         title: "Private Homes",
+         items: [
+            "item 1",
+            "item 2",
+            "item 3,
+         ]
+      },
+      {
+         title: "Hotels",
+         items: [
+            "item 1",
+            "item 2",
+         ]
+      },
+      {
+         title: "Restaurants",
+         items: [
+            "item 1",
+            "item 2",
+         ]
+      },
+      {
+         title: "Supermarkets",
+         items: [
+            "item 1",
+            "item 2",
+         ]
+      }
+   ]
     features: [
       "REGISTERED BRAND",
       "SOFTWARE ELABORATED IN MEXICO",
@@ -98,6 +129,25 @@ function renderContent(lang) {
      document.getElementById('right-column').innerHTML = translations[lang].sections.rightColumn;
   }
 
+/* ------------------------ About Cards --------------------- */
+  const aboutCards = document.getElementById('about-cards');
+  data.forEach(cardData => {
+     const card = document.createElement('div');
+     card.classList.add('card');
+
+     const title = document.createElement('h3');
+     title.textContent = cardData.title;
+
+     const list = document.createElement('ul');
+     cardData.items.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        list.appendChild(li);
+     });
+     card.appendChild(title);
+     card.appendChild(list);
+     container.appendChild(card);
+  });
   /* ---- блок Features ---- */
   const feat = document.getElementById('features');
   if (feat) {
