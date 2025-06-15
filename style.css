@@ -20,6 +20,10 @@ html {
   overflow-x: hidden;
   max-width: 100%;
 }
+
+.highlight {
+  font-weight: 700;
+}
 /* ------------------------Desktop Header------------------------ */
 .desktopHeader {
   height: 10vh;
