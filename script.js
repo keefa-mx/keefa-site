@@ -140,12 +140,24 @@ function renderContent(lang) {
      const list = document.createElement('ul');
      cardData.items.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = item;
-        list.appendChild(li);
-     });
-     card.appendChild(title);
-     card.appendChild(list);
-     aboutCards.appendChild(card);
+        li.classList.add('list-item');
+
+     const emoji = document.createElement('span');
+     emoji.classList.add('emoji');
+     emoji.textContent = '✔️';
+
+     const text = document.createElement('span');
+     text.classList.add('text');
+     text.textContent = item;
+
+     li.appendChild(emoji);
+     li.appendChild(text);
+     li.appendChild(li);
+   }); 
+     
+   card.appendChild(title);
+   card.appendChild(list);
+   aboutCards.appendChild(card);
   });
   /* ---- блок Features ---- */
   const feat = document.getElementById('features');
