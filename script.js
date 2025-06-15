@@ -11,9 +11,9 @@ const translations = {
       billing: "Billing"
     },
     sections: {
-      intro: "Keefa is <span style='font-weight: 700;'>a next-generation tech brand</span> focused on creating intelligent solutions that transform <span style='font-weight: 700;'>residential, commercial, and public spaces</span> into more <span style='font-weight: 700;'>robust and automated</span> environments.",
-      leftColumn: "We design and develop products and systems that enhance the functionality, efficiency, and adaptability of <span style='font-weight: 700;'>private homes, hotels, restaurants, supermarkets,</span> and more.",
-      rightColumn: "Our mission is to reshape everyday environments through innovation — blending <span style='font-weight: 700;'>hardware, software, and AI</span> to make spaces responsive to the people who use them."
+      intro: "Keefa is <span class='highlight'>a next-generation tech brand</span> focused on creating intelligent solutions that transform <span class='highlight'>residential, commercial, and public spaces</span> into more <span class='highlight'>robust and automated</span> environments.",
+      leftColumn: "We design and develop products and systems that enhance the functionality, efficiency, and adaptability of <span class='highlight'>private homes, hotels, restaurants, supermarkets,</span> and more.",
+      rightColumn: "Our mission is to reshape everyday environments through innovation — blending <span class='highlight'>hardware, software, and AI</span> to make spaces responsive to the people who use them."
     },
    cards: [
       {
@@ -69,9 +69,9 @@ const translations = {
       billing: "Facturación"
     },
     sections: {
-      intro: "Keefa es <span style='font-weight: 700;'>una marca tecnológica de nueva generación</span> enfocada en crear soluciones inteligentes que transforman <span style='font-weight: 700;'>los espacios residenciales, comerciales y públicos</span> en entornos más <span style='font-weight: 700;'>robustos y automatizados.</span>",
-      leftColumn: "Diseñamos y desarrollamos productos y sistemas que mejoran la funcionalidad, eficiencia y adaptabilidad de <span style='font-weight: 700;'>casas privadas, hoteles, restaurantes, supermercados</span> y más.",
-      rightColumn: "Nuestra misión es redefinir los entornos cotidianos a través de la innovación — combinando <span style='font-weight: 700;'>hardware, software e inteligencia artificial</span> para hacer que los espacios respondan a las personas que los utilizan. "
+      intro: "Keefa es <span class='highlight'>una marca tecnológica de nueva generación</span> enfocada en crear soluciones inteligentes que transforman <span class='highlight'>los espacios residenciales, comerciales y públicos</span> en entornos más <span class='highlight'>robustos y automatizados.</span>",
+      leftColumn: "Diseñamos y desarrollamos productos y sistemas que mejoran la funcionalidad, eficiencia y adaptabilidad de <span class='highlight'>casas privadas, hoteles, restaurantes, supermercados</span> y más.",
+      rightColumn: "Nuestra misión es redefinir los entornos cotidianos a través de la innovación — combinando <span class='highlight'>hardware, software e inteligencia artificial</span> para hacer que los espacios respondan a las personas que los utilizan. "
     },
     features: [
       "MARCA REGISTRADA",
