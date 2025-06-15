@@ -201,8 +201,17 @@ function initHamburger() {
   });
 }
 
-/* ---------------------Language Buttons Desktop and Mobile--------------------- */
-document.querySelectorAll('.lang-btn').forEach(btn => {
+/* ---------------------Language Button Desktop --------------------- */
+document.querySelectorAll('.lang-btn-desktop').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const selectedLang = btn.dataset.lang.toLowerCase();
+    console.log('Selected language:', selectedLang);
+    setLang(selectedLang);
+  });
+});
+
+/* ---------------------Language Button Mobile --------------------- */
+document.querySelectorAll('.lang-btn-mobile').forEach(btn => {
   btn.addEventListener('click', () => {
     const selectedLang = btn.dataset.lang.toLowerCase();
     console.log('Selected language:', selectedLang);
