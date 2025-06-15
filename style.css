@@ -160,6 +160,7 @@ html {
   border-radius: none;
   margin-left: auto;
   z-index: 1001;
+  padding: clamp(4px, 1vh, 8px) 0;
 }
 
 .hamburger span {
@@ -169,7 +170,6 @@ html {
   background-color: #000;
   border-radius: 2px;
   transition: all 0.3s ease;
-  padding: 5%;
 }
 
 .hamburger.open span:nth-child(1) {
