@@ -170,7 +170,6 @@ html {
 .mobileMenu {
   display: none;
   flex-direction: column;
-  list-style: none;
   position: fixed;
   top: 10vh;
   width: 100%;
@@ -187,6 +186,7 @@ html {
   font-size: 1.5rem;
   color: #000;
   text-decoration: none;
+  list-style: none;
 }
 
 /* класс, который добавляет JS при открытии */
@@ -196,16 +196,14 @@ html {
 /* -----------------------Mobile Language Buttons--------------------- */
 .language-switch {
   display: flex;
-  gap: 8px; /* расстояние между кнопками */
+  gap: 1vw;
 }
 
 .lang-btn {
   background: none;
-  border: 1px solid #ccc;
-  padding: 4px 10px;
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   cursor: pointer;
-  border-radius: 4px;
   transition: background 0.3s;
 }
 
