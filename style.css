@@ -154,11 +154,10 @@ html {
   justify-content: space-between;
   height: clamp(24px, 4vh, 32px);
   aspect-ratio: 1.2 / 1;  
-  background: #808080;
+  background: none;
   border: none;
   cursor: pointer;
-  border-radius: clamp(4px, 1vw, 8px); /* Скругление углов */
-  padding: clamp(4px, 1vh, 8px);       /* Адаптивный отступ внутри */
+  border-radius: none;
   margin-left: auto;
   z-index: 1001;
 }
@@ -166,8 +165,8 @@ html {
 .hamburger span {
   display: block;
   width: 100%;
-  height: clamp(1.5px, 0.3vh, 2.5px);
-  background-color: #CCCCCC;
+  height: clamp(1.7px, 0.5vh, 2.7px);
+  color: #000;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
