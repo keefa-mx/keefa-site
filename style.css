@@ -368,6 +368,17 @@ html {
   line-height: 1.5;
 }
 
+@media (max-width: 430px) {
+  .about-cards {
+    flex-direction: column;
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
 .products-container {
   display: block;
 }
