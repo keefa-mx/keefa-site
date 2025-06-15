@@ -22,6 +22,11 @@ const translations = {
             "stay aware of who frequents your private property",
             "distinguish between strangers and people you know",
             "register family members and friends",
+            "get to know if a stranger is on your property even if they hide behind objects",
+            "receive app alerts if a stranger remains on your property for too long",
+            "receive app alerts if a stranger visits your property multiple times",
+            "get to know if a stranger is on your property even if they are out of reach of your cameras",
+            "receive app notifications if a family member or a friend is close to your home",
          ]
       },
       {
