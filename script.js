@@ -130,6 +130,7 @@ function renderContent(lang) {
 
 /* ------------------------ About Cards --------------------- */
   const aboutCards = document.getElementById('about-cards');
+  if (aboutCards) {
   cardsData.forEach(cardData => {
      const card = document.createElement('div');
      card.classList.add('card');
@@ -159,6 +160,7 @@ function renderContent(lang) {
    card.appendChild(list);
    aboutCards.appendChild(card);
   });
+}
   /* ---- блок Features ---- */
   const feat = document.getElementById('features');
   if (feat) {
