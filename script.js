@@ -54,9 +54,9 @@ const translations = {
       }
    ],
     features: [
-      "REGISTERED BRAND",
-      "SOFTWARE ELABORATED IN MEXICO",
-      "INTELLIGENT SYSTEMS"
+      "Trademark",
+      "Software made in Mexico",
+      "AI-powered"
     ]
   },
 
