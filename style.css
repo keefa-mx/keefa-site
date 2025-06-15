@@ -322,12 +322,12 @@ html {
   flex-wrap: wrap;
   margin-right: 5vw;
   margin-left: 5vw;
-  margin-top: 2vh;
   justify-content: space-between;
 }
 
 .card {
   width: 43vw;
+  margin-top: 2vh;
   background: #fff;
   padding: 16px;
   border: none;
