@@ -209,12 +209,19 @@ html {
   background: none;
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #000;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .lang-btn:hover {
   background: #f0f0f0;
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: #000;
 }
 
 .desktopHeader {
