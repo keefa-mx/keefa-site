@@ -206,8 +206,7 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const selectedLang = btn.dataset.lang;
     console.log('Selected language:', selectedLang);
-    // Здесь можешь вызвать функцию переключения перевода:
-    // changeLanguage(selectedLang);
+    setLang(selectedLang);
   });
 });
 
