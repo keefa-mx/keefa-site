@@ -76,26 +76,25 @@ html {
   color: #ABFF33;
 }
 /* ----------------------Desktop Language Buttons---------------------- */
-.language-switch-destop {
+.language-switch {
   display: flex;
-  gap: 8px; /* расстояние между кнопками */
 }
 
-.lang-btn-desktop {
+.lang-btn {
   background: none;
-  border: 1px solid #ccc;
-  padding: 4px 10px;
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  padding: 0 1vw;
+  color: #000;
   cursor: pointer;
-  border-radius: 4px;
   transition: background 0.3s;
 }
 
-.lang-btn-desktop:hover {
+.lang-btn:hover {
   background: #f0f0f0;
 }
 
-.divider-desktop {
+.divider {
   width: 1px;
   height: 100%;
   background-color: #000;
@@ -201,11 +200,11 @@ html {
   display: flex;
 }
 /* -----------------------Mobile Language Buttons--------------------- */
-.language-switch-mobile {
+.language-switch {
   display: flex;
 }
 
-.lang-btn-mobile {
+.lang-btn {
   background: none;
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
@@ -233,14 +232,12 @@ html {
 @media (min-width: 431px) {
   .mobileHeader,
   .hamburger,
-  .mobileMenu,
-  .language-switch-mobile {
+  .mobileMenu {
     display: none;
   }
 
   .desktopHeader,
-  .desktopMenu
-  .language-switch-desktop {
+  .desktopMenu {
     display: flex;
   }
 }
