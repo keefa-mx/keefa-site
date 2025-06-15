@@ -233,12 +233,14 @@ html {
 @media (min-width: 431px) {
   .mobileHeader,
   .hamburger,
-  .mobileMenu {
+  .mobileMenu,
+  .language-switch-mobile {
     display: none;
   }
 
   .desktopHeader,
-  .desktopMenu {
+  .desktopMenu
+  .language-switch-desktop {
     display: flex;
   }
 }
