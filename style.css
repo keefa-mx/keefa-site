@@ -169,6 +169,7 @@ html {
   background-color: #000;
   border-radius: 2px;
   transition: all 0.3s ease;
+  padding: 5%;
 }
 
 .hamburger.open span:nth-child(1) {
@@ -339,7 +340,7 @@ html {
 }
 
 .card h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Righteous', sans-serif;
   font-size: clamp(1.3rem, 2.3vw, 1.5rem);
 }
 
