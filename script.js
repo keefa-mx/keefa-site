@@ -39,8 +39,10 @@ const translations = {
       {
          title: "Restaurants",
          items: [
-            "item 1",
-            "item 2",
+            "automate the process of gathering data about your staff's clock in and clock out hours",
+            "get to know your regular clients",
+            "gather the daily, monthly and yearly statistics on the number of clients who visit your establishment",
+            "get to know which things on your menu are the most popular",
          ]
       },
       {
