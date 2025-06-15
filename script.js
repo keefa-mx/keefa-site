@@ -168,10 +168,10 @@ function renderContent(lang) {
    aboutCards.appendChild(card);
   });
 }
-  /* ---- блок Features ---- */
-  const feat = document.getElementById('features');
-  if (feat) {
-    feat.innerHTML = t.features
+  /* ---------------------------- Features -------------------------- */
+  const features = document.getElementById('features');
+  if (features) {
+    features.innerHTML = t.features
       .map(item => `<div class="feature-item">${item}</div>`)
       .join('');
   }
