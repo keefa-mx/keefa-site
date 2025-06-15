@@ -202,14 +202,13 @@ html {
 /* -----------------------Mobile Language Buttons--------------------- */
 .language-switch {
   display: flex;
-  gap: 1vw;
 }
 
 .lang-btn {
   background: none;
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 700;
+  padding: 0;
   color: #000;
   cursor: pointer;
   transition: background 0.3s;
@@ -380,10 +379,11 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1vw; 
 }
 
 .feature-item {
-  width: 20vw;
+  width: 30vw;
   background: #F0F0F0;
   margin-top: 2vh;
   border-radius: clamp(8px, 1.2vw, 16px);
