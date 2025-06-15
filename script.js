@@ -152,7 +152,7 @@ function renderContent(lang) {
 
      li.appendChild(emoji);
      li.appendChild(text);
-     li.appendChild(li);
+     list.appendChild(li);
    }); 
      
    card.appendChild(title);
