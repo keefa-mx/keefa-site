@@ -19,9 +19,9 @@ const translations = {
       {
          title: "Private Homes",
          items: [
-            "item 1",
-            "item 2",
-            "item 3",
+            "stay aware of who frequents your private property",
+            "distinguish between strangers and people you know",
+            "register family members and friends",
          ]
       },
       {
