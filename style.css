@@ -193,7 +193,7 @@ html {
 .mobileMenu.open {
   display: flex;
 }
-/* -----------------------Mobile Language Dropdown--------------------- */
+/* -----------------------Mobile Language Buttons--------------------- */
 .language-switch {
   display: flex;
   gap: 8px; /* расстояние между кнопками */
@@ -371,7 +371,7 @@ html {
 }
 
 .feature-item {
-  flex: 0 1 10%;
+  width: 10vw;
   background: #F0F0F0;
   margin-top: 2vh;
   border-radius: clamp(8px, 1.2vw, 16px);
