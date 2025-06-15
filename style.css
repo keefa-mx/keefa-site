@@ -328,9 +328,9 @@ html {
 .card {
   width: 43vw;
   margin-top: 2vh;
-  background: linear-gradient(to bottom, #ABFF33, #fff);
-  padding: 5vw;
-  border: 5px solid #ABFF33;
+  background: linear-gradient(to right, #ABFF33, #fff);
+  padding: 2vw;
+  border: none;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
