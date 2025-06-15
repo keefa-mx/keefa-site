@@ -75,56 +75,24 @@ html {
 .desktopMenu li a:hover {
   color: #ABFF33;
 }
-/* ----------------------Language Dropdown---------------------- */
-.langIconDesktop svg {
-  height: clamp(18px, 3vh, 30px);
-  width: auto;
-  cursor: pointer;
-  position: relative;
-  background: none;
-  border: none;
+/* ----------------------Language Buttons---------------------- */
+.language-switch {
+  display: flex;
+  gap: 8px; /* расстояние между кнопками */
 }
 
-.langIconDesktop {
-  position: relative;
+.lang-btn {
   background: none;
-  border: none;
-  padding: 0;
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  font-size: 14px;
   cursor: pointer;
-}
-
-.langMenuDesktop {
-  display: none;
-  position: absolute;
-  top: 70%;
-  right: 0;
-  background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
   border-radius: 4px;
-  z-index: 100;
-  padding: 6px;
-  flex-direction: row;
-  gap: 0;
+  transition: background 0.3s;
 }
 
-.langMenuDesktop.show {
-  display: block;
-}
-
-.langBtn {
-  background: none;
-  border: none;
-  padding: 6px 12px;
-  width: auto;
-  text-align: left;
-  font-family: "Inter", sans-serif;
-  font-size: clamp(0.75rem, 1.5vw, 0.95rem);
-  color: #000;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.langBtn:not(:last-child) {
-  border-right: 1px solid #000;
+.lang-btn:hover {
+  background: #f0f0f0;
 }
 /* ---------------------------Mobile Header--------------------------- */
 .mobileHeader {
@@ -226,40 +194,23 @@ html {
   display: flex;
 }
 /* -----------------------Mobile Language Dropdown--------------------- */
-.langIconMobile {
-  font-size: 1.5rem;
+.language-switch {
+  display: flex;
+  gap: 8px; /* расстояние между кнопками */
+}
+
+.lang-btn {
   background: none;
-  border: none;
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  font-size: 14px;
   cursor: pointer;
-}
-
-.langIconMobile {
-  position: relative;
-}
-
-.langMenuMobile {
-  display: none;
-  position: absolute;
-  top: 36px;
-  right: 0;
-  background: #fff;
-  border: none;
   border-radius: 4px;
-  z-index: 100;
-  padding: 6px;
+  transition: background 0.3s;
 }
 
-.langMenuMobile.show {
-  display: block;
-}
-
-.langBtn {
-  background: none;
-  border: none;
-  padding: 6px 12px;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
+.lang-btn:hover {
+  background: #f0f0f0;
 }
 
 .desktopHeader {
