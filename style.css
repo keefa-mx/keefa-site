@@ -160,7 +160,7 @@ html {
   border-radius: none;
   margin-left: auto;
   z-index: 1001;
-  padding: clamp(4px, 1vh, 8px) 0;
+  padding: clamp(4px, 1vh, 8px) clamp(4px, 1vh, 8px);
 }
 
 .hamburger span {
@@ -168,7 +168,7 @@ html {
   width: 100%;
   height: clamp(1.7px, 0.5vh, 2.7px);
   background-color: #000;
-  border-radius: 2px;
+  border-radius: clamp(1px, 0.3vw, 3px);
   transition: all 0.3s ease;
 }
 
