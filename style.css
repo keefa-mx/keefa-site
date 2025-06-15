@@ -412,25 +412,24 @@ html {
 .feature-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2vw;
-  margin-top: 2vh;
 }
 
 .feature-item {
-  flex: 1 1 30%;
+  flex: 0 1 20vw;
   background: #F0F0F0;
+  margin-top: 2vh;
   padding: 2vh 2vw;
   border-radius: clamp(8px, 1.2vw, 16px);
+  font-family: 'Righteous', sans-serif;
   font-size: clamp(1rem, 1.2vw, 1.5rem);
-  font-weight: 600;
-  color: #333;
+  color: #000;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .feature-item:hover {
-  transform: scale(1.05);
   background: #EAEAEA;
 }
 
