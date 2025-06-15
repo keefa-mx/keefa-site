@@ -417,14 +417,12 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2vw;
 }
 
 .feature-item {
-  flex: 0 1 20vw;
+  flex: 0 1 10%;
   background: #F0F0F0;
   margin-top: 2vh;
-  padding: 2vh 2vw;
   border-radius: clamp(8px, 1.2vw, 16px);
   font-family: 'Righteous', sans-serif;
   font-size: clamp(1rem, 1.2vw, 1.5rem);
