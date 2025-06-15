@@ -204,7 +204,7 @@ function initHamburger() {
 /* ---------------------Language Buttons Desktop and Mobile--------------------- */
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    const selectedLang = btn.dataset.lang;
+    const selectedLang = btn.dataset.lang.toLowerCase();
     console.log('Selected language:', selectedLang);
     setLang(selectedLang);
   });
