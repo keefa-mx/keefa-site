@@ -209,6 +209,7 @@ html {
   background: none;
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
   color: #000;
   cursor: pointer;
   transition: background 0.3s;
@@ -382,7 +383,7 @@ html {
 }
 
 .feature-item {
-  width: 10vw;
+  width: 20vw;
   background: #F0F0F0;
   margin-top: 2vh;
   border-radius: clamp(8px, 1.2vw, 16px);
