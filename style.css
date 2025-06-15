@@ -327,7 +327,7 @@ html {
 }
 
 .card {
-  width: 40vw;
+  width: 43vw;
   background: #fff;
   padding: 16px;
   border: none;
@@ -354,7 +354,7 @@ html {
 }
 
 .card ul li::before {
-  content: "✅";  /* эмодзи галочка */
+  content: "✔️";
   position: absolute;
   left: 0;
   top: 0;
