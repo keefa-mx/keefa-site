@@ -352,6 +352,7 @@ html {
 
 .list-item {
   display: flex;
+  margin-bottom: 2vh;
 }
 
 .emoji {
