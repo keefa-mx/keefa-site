@@ -346,21 +346,25 @@ html {
 
 .card ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.card ul li {
+.list-item {
+  display: flex;
+}
+
+.emoji {
+  flex: 0 0 10%;
+  text-align: center;
+  font-size: 1em;
+}
+
+.text {
+  flex: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  position: relative; 
-}
-
-.card ul li::before {
-  content: "✔️";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 16px; /* размер эмодзи, можно менять */
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .products-container {
