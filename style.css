@@ -94,6 +94,12 @@ html {
 .lang-btn:hover {
   background: #f0f0f0;
 }
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+}
 /* ---------------------------Mobile Header--------------------------- */
 .mobileHeader {
   height: 10vh;
