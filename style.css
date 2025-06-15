@@ -379,11 +379,11 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1vw; 
+  gap: 5vw;
 }
 
 .feature-item {
-  width: 30vw;
+  width: 40vw;
   background: #F0F0F0;
   margin-top: 2vh;
   border-radius: clamp(8px, 1.2vw, 16px);
