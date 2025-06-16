@@ -263,11 +263,11 @@ html {
 
 .goals {
   width: 100%;
-  height: 30vh;
+  height: 10vh;
 }
 
 .product-img {
-  width: 100%;
+  width: 50%;
   height: auto;
   overflow: hidden;
 }
