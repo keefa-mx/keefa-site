@@ -261,11 +261,6 @@ html {
   margin-left: 5vw;
 }
 
-.product-img {
-  height: 30vh;
-  width: auto;
-}
-
 .about-us {
   display: flex;
   flex-wrap: wrap;
